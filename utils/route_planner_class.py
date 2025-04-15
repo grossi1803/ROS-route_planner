@@ -121,9 +121,9 @@ class RoutePlanner:
             self.graph = ox.graph_from_polygon(
                 polygon,
                 network_type=self.network_type.lower(),
-                simplify=bool(Config.SIMPLIFY), 
-                truncate_by_edge= bool(Config.TRUNCATE_EDGE),
-                retain_all=bool(Config.RETAIN)
+                simplify=True,
+                truncate_by_edge=False,
+                retain_all=False
             )
 
             if not self.graph:

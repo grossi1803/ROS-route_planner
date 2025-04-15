@@ -18415,3 +18415,839 @@ NameError: name 'false' is not defined
 2025-04-03 09:50:33,613 - INFO - utils.route_planner_class - Found 51 unique routes
 2025-04-03 09:50:33,629 - INFO - app - Job 586d352a-7d49-4b22-a4e5-837e18a7ba8e: processed 51 routes
 2025-04-03 09:50:34,137 - INFO - app - Job 586d352a-7d49-4b22-a4e5-837e18a7ba8e completed successfully
+2025-04-11 09:26:51,068 - INFO - utils.route_planner_class - Flask application started, logging initialized!
+2025-04-11 09:26:51,068 - INFO - app - Flask application started, logging initialized!
+2025-04-11 09:26:51,068 - INFO - app - Attempting to connect to MongoDB...
+2025-04-11 09:26:51,075 - INFO - app - Connected to MongoDB successfully.
+2025-04-11 09:26:51,089 - INFO - app - Started job b45b9867-1bdc-451c-93aa-4c848682c993
+2025-04-11 09:26:51,090 - INFO - app - Processing job: b45b9867-1bdc-451c-93aa-4c848682c993
+2025-04-11 09:26:51,090 - INFO - app - Job b45b9867-1bdc-451c-93aa-4c848682c993: start location: (41.908919110136395, 12.513380710338538), end location: None, radius: 112, polygon: None, middle points: []
+2025-04-11 09:26:51,091 - INFO - utils.route_planner_class - Fetching graph for location (41.908919110136395, 12.513380710338538) with radius 0.11 km
+2025-04-11 09:26:51,091 - INFO - utils.route_planner_class - Network type: DRIVE
+2025-04-11 09:26:51,091 - INFO - utils.route_planner_class - Truncate by edge: False, <class 'bool'>
+2025-04-11 09:26:51,091 - INFO - utils.route_planner_class - Simplify: False, True
+2025-04-11 09:26:51,091 - INFO - utils.route_planner_class - Retain: True, True
+2025-04-11 09:26:53,645 - INFO - utils.route_planner_class - Graph fetched: 47 nodes, 55 edges
+2025-04-11 09:26:53,650 - INFO - utils.route_planner_class - Computing routes from start node...
+2025-04-11 09:26:53,722 - INFO - utils.route_planner_class - Found 22 unique routes
+2025-04-11 09:26:53,723 - INFO - app - Job b45b9867-1bdc-451c-93aa-4c848682c993: processed 22 routes
+2025-04-11 09:26:53,750 - INFO - app - Job b45b9867-1bdc-451c-93aa-4c848682c993 completed successfully
+2025-04-11 09:27:24,787 - INFO - app - Started job e64a3df2-6ae7-479f-b499-f2ebd6e04532
+2025-04-11 09:27:24,788 - INFO - app - Processing job: e64a3df2-6ae7-479f-b499-f2ebd6e04532
+2025-04-11 09:27:24,788 - INFO - app - Job e64a3df2-6ae7-479f-b499-f2ebd6e04532: start location: (41.90888306812627, 12.513489677919978), end location: None, radius: 94, polygon: None, middle points: []
+2025-04-11 09:27:24,788 - INFO - utils.route_planner_class - Fetching graph for location (41.90888306812627, 12.513489677919978) with radius 0.09 km
+2025-04-11 09:27:24,789 - INFO - utils.route_planner_class - Network type: DRIVE
+2025-04-11 09:27:24,789 - INFO - utils.route_planner_class - Truncate by edge: False, <class 'bool'>
+2025-04-11 09:27:24,789 - INFO - utils.route_planner_class - Simplify: False, True
+2025-04-11 09:27:24,789 - INFO - utils.route_planner_class - Retain: True, True
+2025-04-11 09:27:26,008 - INFO - utils.route_planner_class - Graph fetched: 22 nodes, 27 edges
+2025-04-11 09:27:26,011 - INFO - utils.route_planner_class - Computing routes from start node...
+2025-04-11 09:27:26,035 - INFO - utils.route_planner_class - Found 8 unique routes
+2025-04-11 09:27:26,036 - INFO - app - Job e64a3df2-6ae7-479f-b499-f2ebd6e04532: processed 8 routes
+2025-04-11 09:27:26,045 - INFO - app - Job e64a3df2-6ae7-479f-b499-f2ebd6e04532 completed successfully
+2025-04-11 09:42:34,292 - INFO - app - Started job e3d8bc10-3589-4ea2-b688-f6d8de0e6baa
+2025-04-11 09:42:34,295 - INFO - app - Processing job: e3d8bc10-3589-4ea2-b688-f6d8de0e6baa
+2025-04-11 09:42:34,296 - INFO - app - Job e3d8bc10-3589-4ea2-b688-f6d8de0e6baa: start location: (41.90915849278181, 12.467433613936805), end location: None, radius: 131, polygon: None, middle points: []
+2025-04-11 09:42:34,296 - INFO - utils.route_planner_class - Fetching graph for location (41.90915849278181, 12.467433613936805) with radius 0.13 km
+2025-04-11 09:42:34,296 - INFO - utils.route_planner_class - Network type: DRIVE
+2025-04-11 09:42:34,296 - INFO - utils.route_planner_class - Truncate by edge: False, <class 'bool'>
+2025-04-11 09:42:34,296 - INFO - utils.route_planner_class - Simplify: False, True
+2025-04-11 09:42:34,296 - INFO - utils.route_planner_class - Retain: True, True
+2025-04-11 09:42:35,291 - INFO - utils.route_planner_class - Graph fetched: 77 nodes, 94 edges
+2025-04-11 09:42:35,294 - INFO - utils.route_planner_class - Computing routes from start node...
+2025-04-11 09:42:35,437 - INFO - utils.route_planner_class - Found 157 unique routes
+2025-04-11 09:42:35,439 - INFO - app - Job e3d8bc10-3589-4ea2-b688-f6d8de0e6baa: processed 157 routes
+2025-04-11 09:42:35,615 - INFO - app - Job e3d8bc10-3589-4ea2-b688-f6d8de0e6baa completed successfully
+2025-04-11 09:42:50,636 - INFO - app - Started job 091deb27-84ec-4715-ba00-c751f364e6ad
+2025-04-11 09:42:50,637 - INFO - app - Processing job: 091deb27-84ec-4715-ba00-c751f364e6ad
+2025-04-11 09:42:50,638 - INFO - app - Job 091deb27-84ec-4715-ba00-c751f364e6ad: start location: (41.90972220076105, 12.465794782085737), end location: None, radius: 212, polygon: None, middle points: []
+2025-04-11 09:42:50,638 - INFO - utils.route_planner_class - Fetching graph for location (41.90972220076105, 12.465794782085737) with radius 0.21 km
+2025-04-11 09:42:50,638 - INFO - utils.route_planner_class - Network type: DRIVE
+2025-04-11 09:42:50,638 - INFO - utils.route_planner_class - Truncate by edge: False, <class 'bool'>
+2025-04-11 09:42:50,638 - INFO - utils.route_planner_class - Simplify: False, True
+2025-04-11 09:42:50,638 - INFO - utils.route_planner_class - Retain: True, True
+2025-04-11 09:42:51,761 - INFO - utils.route_planner_class - Graph fetched: 230 nodes, 281 edges
+2025-04-11 09:42:51,765 - INFO - utils.route_planner_class - Computing routes from start node...
+2025-04-11 09:43:01,009 - INFO - utils.route_planner_class - Found 9341 unique routes
+2025-04-11 09:43:01,282 - INFO - app - Job 091deb27-84ec-4715-ba00-c751f364e6ad: processed 9341 routes
+2025-04-11 09:43:14,347 - INFO - app - Job 091deb27-84ec-4715-ba00-c751f364e6ad completed successfully
+2025-04-11 09:43:59,733 - INFO - app - Started job 441676a7-02fb-4907-a4ca-0cf7a9c0b593
+2025-04-11 09:43:59,733 - INFO - app - Processing job: 441676a7-02fb-4907-a4ca-0cf7a9c0b593
+2025-04-11 09:43:59,734 - INFO - app - Job 441676a7-02fb-4907-a4ca-0cf7a9c0b593: start location: (41.91000285990518, 12.466961207736944), end location: None, radius: 126, polygon: None, middle points: []
+2025-04-11 09:43:59,734 - INFO - utils.route_planner_class - Fetching graph for location (41.91000285990518, 12.466961207736944) with radius 0.13 km
+2025-04-11 09:43:59,734 - INFO - utils.route_planner_class - Network type: DRIVE
+2025-04-11 09:43:59,734 - INFO - utils.route_planner_class - Truncate by edge: False, <class 'bool'>
+2025-04-11 09:43:59,734 - INFO - utils.route_planner_class - Simplify: False, True
+2025-04-11 09:43:59,734 - INFO - utils.route_planner_class - Retain: True, True
+2025-04-11 09:44:01,372 - INFO - utils.route_planner_class - Graph fetched: 60 nodes, 69 edges
+2025-04-11 09:44:01,375 - INFO - utils.route_planner_class - Computing routes from start node...
+2025-04-11 09:44:01,472 - INFO - utils.route_planner_class - Found 76 unique routes
+2025-04-11 09:44:01,473 - INFO - app - Job 441676a7-02fb-4907-a4ca-0cf7a9c0b593: processed 76 routes
+2025-04-11 09:44:01,564 - INFO - app - Job 441676a7-02fb-4907-a4ca-0cf7a9c0b593 completed successfully
+2025-04-11 10:53:46,284 - INFO - utils.route_planner_class - Flask application started, logging initialized!
+2025-04-11 10:53:46,285 - INFO - app - Flask application started, logging initialized!
+2025-04-11 10:53:46,285 - INFO - app - Attempting to connect to MongoDB...
+2025-04-11 10:53:46,289 - INFO - app - Connected to MongoDB successfully.
+2025-04-11 10:53:46,303 - INFO - app - Started job c3cadd76-da79-4704-ba11-e3a4fae3dd3d
+2025-04-11 10:53:46,304 - INFO - app - Processing job: c3cadd76-da79-4704-ba11-e3a4fae3dd3d
+2025-04-11 10:53:46,305 - INFO - app - Job c3cadd76-da79-4704-ba11-e3a4fae3dd3d: start location: (41.904934117552585, 12.491046670685137), end location: None, radius: 78, polygon: None, middle points: []
+2025-04-11 10:53:46,305 - INFO - utils.route_planner_class - Fetching graph for location (41.904934117552585, 12.491046670685137) with radius 0.08 km
+2025-04-11 10:53:46,305 - INFO - utils.route_planner_class - Network type: DRIVE
+2025-04-11 10:53:46,305 - INFO - utils.route_planner_class - Truncate by edge: False, <class 'bool'>
+2025-04-11 10:53:46,305 - INFO - utils.route_planner_class - Simplify: False, True
+2025-04-11 10:53:46,305 - INFO - utils.route_planner_class - Retain: True, True
+2025-04-11 10:53:47,448 - INFO - utils.route_planner_class - Graph fetched: 30 nodes, 29 edges
+2025-04-11 10:53:47,451 - INFO - utils.route_planner_class - Computing routes from start node...
+2025-04-11 10:53:47,486 - INFO - utils.route_planner_class - Found 10 unique routes
+2025-04-11 10:53:47,487 - INFO - app - Job c3cadd76-da79-4704-ba11-e3a4fae3dd3d: processed 10 routes
+2025-04-11 10:53:47,499 - INFO - app - Job c3cadd76-da79-4704-ba11-e3a4fae3dd3d completed successfully
+2025-04-11 10:54:26,281 - INFO - app - Started job e429b5b9-54ee-495a-9fcc-0f9ea82ba5dd
+2025-04-11 10:54:26,282 - INFO - app - Processing job: e429b5b9-54ee-495a-9fcc-0f9ea82ba5dd
+2025-04-11 10:54:26,282 - INFO - app - Job e429b5b9-54ee-495a-9fcc-0f9ea82ba5dd: start location: (41.904934117552585, 12.491046670685137), end location: None, radius: 78, polygon: None, middle points: []
+2025-04-11 10:54:26,283 - INFO - utils.route_planner_class - Fetching graph for location (41.904934117552585, 12.491046670685137) with radius 0.08 km
+2025-04-11 10:54:26,283 - INFO - utils.route_planner_class - Network type: WALK
+2025-04-11 10:54:26,283 - INFO - utils.route_planner_class - Truncate by edge: False, <class 'bool'>
+2025-04-11 10:54:26,283 - INFO - utils.route_planner_class - Simplify: False, True
+2025-04-11 10:54:26,283 - INFO - utils.route_planner_class - Retain: True, True
+2025-04-11 10:54:28,734 - INFO - utils.route_planner_class - Graph fetched: 103 nodes, 228 edges
+2025-04-11 10:54:28,737 - INFO - utils.route_planner_class - Computing routes from start node...
+2025-04-11 10:54:49,893 - INFO - utils.route_planner_class - Found 64246 unique routes
+2025-04-11 10:54:50,834 - INFO - app - Job e429b5b9-54ee-495a-9fcc-0f9ea82ba5dd: processed 64246 routes
+2025-04-11 10:56:07,218 - INFO - app - Job e429b5b9-54ee-495a-9fcc-0f9ea82ba5dd completed successfully
+2025-04-11 14:29:41,804 - INFO - utils.route_planner_class - Flask application started, logging initialized!
+2025-04-11 14:29:41,804 - INFO - app - Flask application started, logging initialized!
+2025-04-11 14:29:41,805 - INFO - app - Attempting to connect to MongoDB...
+2025-04-11 14:29:41,809 - INFO - app - Connected to MongoDB successfully.
+2025-04-11 14:29:41,824 - INFO - app - Started job 2166b10e-5157-4aea-a709-b24384bbfb2c
+2025-04-11 14:29:41,825 - INFO - app - Processing job: 2166b10e-5157-4aea-a709-b24384bbfb2c
+2025-04-11 14:29:41,826 - INFO - app - Job 2166b10e-5157-4aea-a709-b24384bbfb2c: start location: (41.90918498599805, 12.476099702048458), end location: None, radius: 99, polygon: None, middle points: []
+2025-04-11 14:29:41,826 - INFO - utils.route_planner_class - Fetching graph for location (41.90918498599805, 12.476099702048458) with radius 0.10 km
+2025-04-11 14:29:41,826 - INFO - utils.route_planner_class - Network type: DRIVE
+2025-04-11 14:29:41,826 - INFO - utils.route_planner_class - Truncate by edge: False, <class 'bool'>
+2025-04-11 14:29:41,826 - INFO - utils.route_planner_class - Simplify: False, True
+2025-04-11 14:29:41,826 - INFO - utils.route_planner_class - Retain: True, True
+2025-04-11 14:29:43,274 - INFO - utils.route_planner_class - Graph fetched: 23 nodes, 22 edges
+2025-04-11 14:29:43,277 - INFO - utils.route_planner_class - Computing routes from start node...
+2025-04-11 14:29:43,311 - INFO - utils.route_planner_class - Found 11 unique routes
+2025-04-11 14:29:43,311 - INFO - app - Job 2166b10e-5157-4aea-a709-b24384bbfb2c: processed 11 routes
+2025-04-11 14:29:43,325 - INFO - app - Job 2166b10e-5157-4aea-a709-b24384bbfb2c completed successfully
+2025-04-11 15:06:44,118 - INFO - utils.route_planner_class - Flask application started, logging initialized!
+2025-04-11 15:06:44,118 - INFO - app - Flask application started, logging initialized!
+2025-04-11 15:06:44,118 - INFO - app - Attempting to connect to MongoDB...
+2025-04-11 15:06:44,123 - INFO - app - Connected to MongoDB successfully.
+2025-04-11 15:06:44,136 - INFO - app - Started job 35572908-ee2b-43c0-85af-42056713400f
+2025-04-11 15:06:44,137 - INFO - app - Processing job: 35572908-ee2b-43c0-85af-42056713400f
+2025-04-11 15:06:44,138 - INFO - app - Job 35572908-ee2b-43c0-85af-42056713400f: start location: (41.79623914607069, 12.607018813481204), end location: None, radius: None, polygon: [{'longitude': 12.604462261677241, 'latitude': 41.79488855101337}, {'longitude': 12.608119315913541, 'latitude': 41.79179595981276}, {'longitude': 12.612504394836321, 'latitude': 41.79433315787176}, {'longitude': 12.60888120221253, 'latitude': 41.79774117630498}, {'longitude': 12.604462261677241, 'latitude': 41.79488855101337}], middle points: []
+2025-04-11 15:06:44,138 - INFO - utils.route_planner_class - Network type: DRIVE
+2025-04-11 15:06:44,138 - INFO - utils.route_planner_class - Truncate by edge: False, <class 'bool'>
+2025-04-11 15:06:44,138 - INFO - utils.route_planner_class - Simplify: False, True
+2025-04-11 15:06:44,139 - INFO - utils.route_planner_class - Retain: True, True
+2025-04-11 15:06:44,759 - INFO - utils.route_planner_class - Computing routes from start node within the polygon...
+2025-04-11 15:06:45,693 - INFO - utils.route_planner_class - Found 2202 unique routes
+2025-04-11 15:06:45,767 - INFO - app - Job 35572908-ee2b-43c0-85af-42056713400f: processed 2202 routes
+2025-04-11 15:06:48,655 - INFO - app - Job 35572908-ee2b-43c0-85af-42056713400f completed successfully
+2025-04-11 15:06:58,313 - INFO - app - Started job ccc7ec8e-2c25-4faf-afdd-5e695db9ce91
+2025-04-11 15:06:58,314 - INFO - app - Processing job: ccc7ec8e-2c25-4faf-afdd-5e695db9ce91
+2025-04-11 15:06:58,315 - INFO - app - Job ccc7ec8e-2c25-4faf-afdd-5e695db9ce91: start location: (41.79623914607069, 12.607018813481204), end location: None, radius: None, polygon: [{'longitude': 12.604462261677241, 'latitude': 41.79488855101337}, {'longitude': 12.608119315913541, 'latitude': 41.79179595981276}, {'longitude': 12.612504394836321, 'latitude': 41.79433315787176}, {'longitude': 12.60888120221253, 'latitude': 41.79774117630498}, {'longitude': 12.604462261677241, 'latitude': 41.79488855101337}], middle points: []
+2025-04-11 15:06:58,316 - INFO - utils.route_planner_class - Network type: WALK
+2025-04-11 15:06:58,316 - INFO - utils.route_planner_class - Truncate by edge: False, <class 'bool'>
+2025-04-11 15:06:58,316 - INFO - utils.route_planner_class - Simplify: False, True
+2025-04-11 15:06:58,316 - INFO - utils.route_planner_class - Retain: True, True
+2025-04-11 15:06:59,721 - INFO - utils.route_planner_class - Computing routes from start node within the polygon...
+2025-04-14 07:15:49,540 - INFO - utils.route_planner_class - Flask application started, logging initialized!
+2025-04-14 07:15:49,541 - INFO - app - Flask application started, logging initialized!
+2025-04-14 07:15:49,541 - INFO - app - Attempting to connect to MongoDB...
+2025-04-14 07:15:49,549 - INFO - app - Connected to MongoDB successfully.
+2025-04-14 07:15:49,565 - INFO - app - Started job f7a19e62-eeab-4865-83e4-7ebe7e664cea
+2025-04-14 07:15:49,566 - INFO - app - Processing job: f7a19e62-eeab-4865-83e4-7ebe7e664cea
+2025-04-14 07:15:49,567 - INFO - app - Job f7a19e62-eeab-4865-83e4-7ebe7e664cea: start location: (41.89808817300755, 12.51554038478281), end location: None, radius: 149, polygon: None, middle points: []
+2025-04-14 07:15:49,567 - INFO - utils.route_planner_class - Fetching graph for location (41.89808817300755, 12.51554038478281) with radius 0.15 km
+2025-04-14 07:15:49,567 - INFO - utils.route_planner_class - Network type: DRIVE
+2025-04-14 07:15:49,567 - INFO - utils.route_planner_class - Truncate by edge: False, <class 'bool'>
+2025-04-14 07:15:49,568 - INFO - utils.route_planner_class - Simplify: False, True
+2025-04-14 07:15:49,568 - INFO - utils.route_planner_class - Retain: True, True
+2025-04-14 07:15:51,034 - INFO - utils.route_planner_class - Graph fetched: 75 nodes, 102 edges
+2025-04-14 07:15:51,040 - INFO - utils.route_planner_class - Computing routes from start node...
+2025-04-14 07:15:51,180 - INFO - utils.route_planner_class - Found 206 unique routes
+2025-04-14 07:15:51,182 - INFO - app - Job f7a19e62-eeab-4865-83e4-7ebe7e664cea: processed 206 routes
+2025-04-14 07:15:51,419 - INFO - app - Job f7a19e62-eeab-4865-83e4-7ebe7e664cea completed successfully
+2025-04-14 07:42:26,445 - INFO - app - Started job eff1ffac-3a59-434b-8380-c296a21f23c2
+2025-04-14 07:42:26,446 - INFO - app - Processing job: eff1ffac-3a59-434b-8380-c296a21f23c2
+2025-04-14 07:42:26,446 - INFO - app - Job eff1ffac-3a59-434b-8380-c296a21f23c2: start location: (41.90219003762408, 12.506133829685496), end location: None, radius: 110, polygon: None, middle points: []
+2025-04-14 07:42:26,447 - INFO - utils.route_planner_class - Fetching graph for location (41.90219003762408, 12.506133829685496) with radius 0.11 km
+2025-04-14 07:42:26,447 - INFO - utils.route_planner_class - Network type: DRIVE
+2025-04-14 07:42:26,447 - INFO - utils.route_planner_class - Truncate by edge: False, <class 'bool'>
+2025-04-14 07:42:26,447 - INFO - utils.route_planner_class - Simplify: False, True
+2025-04-14 07:42:26,447 - INFO - utils.route_planner_class - Retain: True, True
+2025-04-14 07:42:27,828 - INFO - utils.route_planner_class - Graph fetched: 81 nodes, 114 edges
+2025-04-14 07:42:27,832 - INFO - utils.route_planner_class - Computing routes from start node...
+2025-04-14 07:42:27,933 - INFO - utils.route_planner_class - Found 46 unique routes
+2025-04-14 07:42:27,934 - INFO - app - Job eff1ffac-3a59-434b-8380-c296a21f23c2: processed 46 routes
+2025-04-14 07:42:27,984 - INFO - app - Job eff1ffac-3a59-434b-8380-c296a21f23c2 completed successfully
+2025-04-14 07:45:57,443 - INFO - app - Started job c24f7b6f-d689-43c3-b358-6dedcbaf5915
+2025-04-14 07:45:57,444 - INFO - app - Processing job: c24f7b6f-d689-43c3-b358-6dedcbaf5915
+2025-04-14 07:45:57,444 - INFO - app - Job c24f7b6f-d689-43c3-b358-6dedcbaf5915: start location: (41.90219003762408, 12.506133829685496), end location: None, radius: 110, polygon: None, middle points: []
+2025-04-14 07:45:57,444 - INFO - utils.route_planner_class - Fetching graph for location (41.90219003762408, 12.506133829685496) with radius 0.11 km
+2025-04-14 07:45:57,445 - INFO - utils.route_planner_class - Network type: WALK
+2025-04-14 07:45:57,445 - INFO - utils.route_planner_class - Truncate by edge: False, <class 'bool'>
+2025-04-14 07:45:57,445 - INFO - utils.route_planner_class - Simplify: False, True
+2025-04-14 07:45:57,445 - INFO - utils.route_planner_class - Retain: True, True
+2025-04-14 07:46:01,662 - INFO - utils.route_planner_class - Graph fetched: 173 nodes, 388 edges
+2025-04-14 07:46:01,666 - INFO - utils.route_planner_class - Computing routes from start node...
+2025-04-14 07:46:39,259 - INFO - app - Started job 3557955e-cded-423e-ae10-75181ae48133
+2025-04-14 07:46:39,277 - INFO - app - Processing job: 3557955e-cded-423e-ae10-75181ae48133
+2025-04-14 07:46:39,279 - INFO - app - Job 3557955e-cded-423e-ae10-75181ae48133: start location: (41.903253762650394, 12.504917129791977), end location: None, radius: 171, polygon: None, middle points: []
+2025-04-14 07:46:39,284 - INFO - utils.route_planner_class - Fetching graph for location (41.903253762650394, 12.504917129791977) with radius 0.17 km
+2025-04-14 07:46:39,300 - INFO - utils.route_planner_class - Network type: DRIVE
+2025-04-14 07:46:39,310 - INFO - utils.route_planner_class - Truncate by edge: False, <class 'bool'>
+2025-04-14 07:46:39,321 - INFO - utils.route_planner_class - Simplify: False, True
+2025-04-14 07:46:39,331 - INFO - utils.route_planner_class - Retain: True, True
+2025-04-14 07:46:42,256 - INFO - utils.route_planner_class - Graph fetched: 156 nodes, 214 edges
+2025-04-14 07:46:42,285 - INFO - utils.route_planner_class - Computing routes from start node...
+2025-04-14 07:46:45,204 - INFO - utils.route_planner_class - Found 525 unique routes
+2025-04-14 07:46:45,238 - INFO - app - Job 3557955e-cded-423e-ae10-75181ae48133: processed 525 routes
+2025-04-14 07:46:50,604 - INFO - app - Job 3557955e-cded-423e-ae10-75181ae48133 completed successfully
+2025-04-14 07:54:59,148 - INFO - app - Started job e326eb15-b360-431e-86e7-e208c8eef00a
+2025-04-14 07:54:59,169 - INFO - app - Processing job: e326eb15-b360-431e-86e7-e208c8eef00a
+2025-04-14 07:54:59,190 - INFO - app - Job e326eb15-b360-431e-86e7-e208c8eef00a: start location: (41.90328847474845, 12.504886037188271), end location: None, radius: 164, polygon: None, middle points: []
+2025-04-14 07:54:59,196 - INFO - utils.route_planner_class - Fetching graph for location (41.90328847474845, 12.504886037188271) with radius 0.16 km
+2025-04-14 07:54:59,206 - INFO - utils.route_planner_class - Network type: DRIVE
+2025-04-14 07:54:59,217 - INFO - utils.route_planner_class - Truncate by edge: False, <class 'bool'>
+2025-04-14 07:54:59,227 - INFO - utils.route_planner_class - Simplify: False, True
+2025-04-14 07:54:59,238 - INFO - utils.route_planner_class - Retain: True, True
+2025-04-14 07:55:01,862 - INFO - utils.route_planner_class - Graph fetched: 133 nodes, 174 edges
+2025-04-14 07:55:01,886 - INFO - utils.route_planner_class - Computing routes from start node...
+2025-04-14 07:55:03,544 - INFO - utils.route_planner_class - Found 241 unique routes
+2025-04-14 07:55:03,559 - INFO - app - Job e326eb15-b360-431e-86e7-e208c8eef00a: processed 241 routes
+2025-04-14 07:55:06,021 - INFO - app - Job e326eb15-b360-431e-86e7-e208c8eef00a completed successfully
+2025-04-14 13:09:56,311 - INFO - utils.route_planner_class - Flask application started, logging initialized!
+2025-04-14 13:09:56,312 - INFO - app - Flask application started, logging initialized!
+2025-04-14 13:09:56,312 - INFO - app - Attempting to connect to MongoDB...
+2025-04-14 13:09:56,319 - INFO - app - Connected to MongoDB successfully.
+2025-04-14 13:09:56,339 - INFO - app - Started job eb750c2e-a9d6-48ce-97d7-bb67edbbe4a6
+2025-04-14 13:09:56,340 - INFO - app - Processing job: eb750c2e-a9d6-48ce-97d7-bb67edbbe4a6
+2025-04-14 13:09:56,340 - INFO - app - Job eb750c2e-a9d6-48ce-97d7-bb67edbbe4a6: start location: (41.91385744998087, 12.523246751929008), end location: None, radius: 176, polygon: None, middle points: []
+2025-04-14 13:09:56,341 - INFO - utils.route_planner_class - Fetching graph for location (41.91385744998087, 12.523246751929008) with radius 0.18 km
+2025-04-14 13:09:56,341 - INFO - utils.route_planner_class - Network type: DRIVE
+2025-04-14 13:09:56,341 - INFO - utils.route_planner_class - Truncate by edge: False, <class 'bool'>
+2025-04-14 13:09:56,341 - INFO - utils.route_planner_class - Simplify: False, True
+2025-04-14 13:09:56,341 - INFO - utils.route_planner_class - Retain: True, True
+2025-04-14 13:09:57,559 - INFO - utils.route_planner_class - Graph fetched: 155 nodes, 211 edges
+2025-04-14 13:09:57,565 - INFO - utils.route_planner_class - Computing routes from start node...
+2025-04-14 13:09:58,102 - INFO - utils.route_planner_class - Found 547 unique routes
+2025-04-14 13:09:58,107 - INFO - app - Job eb750c2e-a9d6-48ce-97d7-bb67edbbe4a6: processed 547 routes
+2025-04-14 13:09:58,748 - INFO - app - Job eb750c2e-a9d6-48ce-97d7-bb67edbbe4a6 completed successfully
+2025-04-14 13:10:23,924 - INFO - app - Started job 066aadce-20a1-4bfe-b79d-165890f9e7c2
+2025-04-14 13:10:23,924 - INFO - app - Processing job: 066aadce-20a1-4bfe-b79d-165890f9e7c2
+2025-04-14 13:10:23,925 - INFO - app - Job 066aadce-20a1-4bfe-b79d-165890f9e7c2: start location: (41.91284569796841, 12.523156112139645), end location: None, radius: 298, polygon: None, middle points: []
+2025-04-14 13:10:23,925 - INFO - utils.route_planner_class - Fetching graph for location (41.91284569796841, 12.523156112139645) with radius 0.30 km
+2025-04-14 13:10:23,925 - INFO - utils.route_planner_class - Network type: DRIVE
+2025-04-14 13:10:23,925 - INFO - utils.route_planner_class - Truncate by edge: False, <class 'bool'>
+2025-04-14 13:10:23,926 - INFO - utils.route_planner_class - Simplify: False, True
+2025-04-14 13:10:23,926 - INFO - utils.route_planner_class - Retain: True, True
+2025-04-14 13:10:26,756 - INFO - utils.route_planner_class - Graph fetched: 470 nodes, 635 edges
+2025-04-14 13:10:26,761 - INFO - utils.route_planner_class - Computing routes from start node...
+2025-04-14 13:10:41,303 - INFO - app - Started job f05ee250-c584-4ba1-921e-83e7052df26b
+2025-04-14 13:10:41,319 - INFO - app - Processing job: f05ee250-c584-4ba1-921e-83e7052df26b
+2025-04-14 13:10:41,330 - INFO - app - Job f05ee250-c584-4ba1-921e-83e7052df26b: start location: (41.91327738078866, 12.523301135802882), end location: None, radius: 131, polygon: None, middle points: []
+2025-04-14 13:10:41,335 - INFO - utils.route_planner_class - Fetching graph for location (41.91327738078866, 12.523301135802882) with radius 0.13 km
+2025-04-14 13:10:41,346 - INFO - utils.route_planner_class - Network type: DRIVE
+2025-04-14 13:10:41,357 - INFO - utils.route_planner_class - Truncate by edge: False, <class 'bool'>
+2025-04-14 13:10:41,367 - INFO - utils.route_planner_class - Simplify: False, True
+2025-04-14 13:10:41,377 - INFO - utils.route_planner_class - Retain: True, True
+2025-04-14 13:10:44,110 - INFO - utils.route_planner_class - Graph fetched: 50 nodes, 61 edges
+2025-04-14 13:10:44,133 - INFO - utils.route_planner_class - Computing routes from start node...
+2025-04-14 13:10:44,575 - INFO - utils.route_planner_class - Found 22 unique routes
+2025-04-14 13:10:44,586 - INFO - app - Job f05ee250-c584-4ba1-921e-83e7052df26b: processed 22 routes
+2025-04-14 13:10:44,790 - INFO - app - Job f05ee250-c584-4ba1-921e-83e7052df26b completed successfully
+2025-04-14 13:17:50,164 - INFO - utils.route_planner_class - Found 198093 unique routes
+2025-04-14 13:17:59,570 - INFO - app - Job 066aadce-20a1-4bfe-b79d-165890f9e7c2: processed 198093 routes
+2025-04-14 13:23:43,569 - INFO - app - Job 066aadce-20a1-4bfe-b79d-165890f9e7c2 completed successfully
+2025-04-14 15:13:55,396 - INFO - utils.route_planner_class - Flask application started, logging initialized!
+2025-04-14 15:13:55,396 - INFO - app - Flask application started, logging initialized!
+2025-04-14 15:13:55,396 - INFO - app - Attempting to connect to MongoDB...
+2025-04-14 15:13:55,401 - INFO - app - Connected to MongoDB successfully.
+2025-04-14 15:13:55,414 - INFO - app - Started job f22c6adf-f589-4d21-8909-874ff270876a
+2025-04-14 15:13:55,415 - INFO - app - Processing job: f22c6adf-f589-4d21-8909-874ff270876a
+2025-04-14 15:13:55,415 - INFO - app - Job f22c6adf-f589-4d21-8909-874ff270876a: start location: (41.7954469271948, 12.605878425210221), end location: None, radius: None, polygon: [{'longitude': 12.604923558801147, 'latitude': 41.79506299045937}, {'longitude': 12.608270955651534, 'latitude': 41.79207940369986}, {'longitude': 12.609247279733438, 'latitude': 41.79274332375928}, {'longitude': 12.605942798226977, 'latitude': 41.795710882366734}, {'longitude': 12.604923558801147, 'latitude': 41.79506299045937}], middle points: []
+2025-04-14 15:13:55,416 - INFO - utils.route_planner_class - Network type: DRIVE
+2025-04-14 15:13:55,416 - INFO - utils.route_planner_class - Truncate by edge: False, <class 'bool'>
+2025-04-14 15:13:55,416 - INFO - utils.route_planner_class - Simplify: False, True
+2025-04-14 15:13:55,416 - INFO - utils.route_planner_class - Retain: True, True
+2025-04-14 15:13:56,391 - INFO - utils.route_planner_class - Computing routes from start node within the polygon...
+2025-04-14 15:13:56,442 - INFO - utils.route_planner_class - Found 53 unique routes
+2025-04-14 15:13:56,443 - INFO - app - Job f22c6adf-f589-4d21-8909-874ff270876a: processed 53 routes
+2025-04-14 15:13:56,500 - INFO - app - Job f22c6adf-f589-4d21-8909-874ff270876a completed successfully
+2025-04-14 15:17:53,088 - INFO - utils.route_planner_class - Flask application started, logging initialized!
+2025-04-14 15:17:53,088 - INFO - app - Flask application started, logging initialized!
+2025-04-14 15:17:53,089 - INFO - app - Attempting to connect to MongoDB...
+2025-04-14 15:17:53,093 - INFO - app - Connected to MongoDB successfully.
+2025-04-14 15:17:53,110 - INFO - app - Started job 0f3f8fed-f692-452b-ba54-9b6698e2271c
+2025-04-14 15:17:53,110 - INFO - app - Processing job: 0f3f8fed-f692-452b-ba54-9b6698e2271c
+2025-04-14 15:17:53,111 - INFO - app - Job 0f3f8fed-f692-452b-ba54-9b6698e2271c: start location: (41.7954469271948, 12.605878425210221), end location: None, radius: None, polygon: [{'longitude': 12.604923558801147, 'latitude': 41.79506299045937}, {'longitude': 12.608270955651534, 'latitude': 41.79207940369986}, {'longitude': 12.609247279733438, 'latitude': 41.79274332375928}, {'longitude': 12.605942798226977, 'latitude': 41.795710882366734}, {'longitude': 12.604923558801147, 'latitude': 41.79506299045937}], middle points: []
+2025-04-14 15:17:53,112 - INFO - utils.route_planner_class - Network type: WALK
+2025-04-14 15:17:53,112 - INFO - utils.route_planner_class - Truncate by edge: False, <class 'bool'>
+2025-04-14 15:17:53,112 - INFO - utils.route_planner_class - Simplify: False, True
+2025-04-14 15:17:53,112 - INFO - utils.route_planner_class - Retain: False, True
+2025-04-14 15:17:53,218 - INFO - app - Started job d4224b3b-84a9-4395-b3a4-411a5700ee8f
+2025-04-14 15:17:53,226 - INFO - app - Processing job: d4224b3b-84a9-4395-b3a4-411a5700ee8f
+2025-04-14 15:17:53,298 - INFO - app - Job d4224b3b-84a9-4395-b3a4-411a5700ee8f: start location: (41.7954469271948, 12.605878425210221), end location: None, radius: None, polygon: [{'longitude': 12.604923558801147, 'latitude': 41.79506299045937}, {'longitude': 12.608270955651534, 'latitude': 41.79207940369986}, {'longitude': 12.609247279733438, 'latitude': 41.79274332375928}, {'longitude': 12.605942798226977, 'latitude': 41.795710882366734}, {'longitude': 12.604923558801147, 'latitude': 41.79506299045937}], middle points: []
+2025-04-14 15:17:53,299 - INFO - utils.route_planner_class - Network type: DRIVE
+2025-04-14 15:17:53,300 - INFO - utils.route_planner_class - Truncate by edge: False, <class 'bool'>
+2025-04-14 15:17:53,300 - INFO - utils.route_planner_class - Simplify: False, True
+2025-04-14 15:17:53,300 - INFO - utils.route_planner_class - Retain: False, True
+2025-04-14 15:17:54,326 - INFO - utils.route_planner_class - Computing routes from start node within the polygon...
+2025-04-14 15:17:54,375 - INFO - utils.route_planner_class - Found 53 unique routes
+2025-04-14 15:17:54,376 - INFO - app - Job d4224b3b-84a9-4395-b3a4-411a5700ee8f: processed 53 routes
+2025-04-14 15:17:54,440 - INFO - app - Job d4224b3b-84a9-4395-b3a4-411a5700ee8f completed successfully
+2025-04-14 15:17:54,711 - INFO - utils.route_planner_class - Computing routes from start node within the polygon...
+2025-04-14 15:18:06,275 - INFO - utils.route_planner_class - Found 35304 unique routes
+2025-04-14 15:18:06,773 - INFO - app - Job 0f3f8fed-f692-452b-ba54-9b6698e2271c: processed 35304 routes
+2025-04-14 15:18:47,252 - INFO - app - Job 0f3f8fed-f692-452b-ba54-9b6698e2271c completed successfully
+2025-04-14 15:25:54,766 - INFO - utils.route_planner_class - Flask application started, logging initialized!
+2025-04-14 15:25:54,766 - INFO - app - Flask application started, logging initialized!
+2025-04-14 15:25:54,766 - INFO - app - Attempting to connect to MongoDB...
+2025-04-14 15:25:54,771 - INFO - app - Connected to MongoDB successfully.
+2025-04-14 15:25:54,796 - INFO - app - Started job d47fdada-4d3a-4ec3-847c-4856628f2531
+2025-04-14 15:25:54,796 - INFO - app - Started job 45f5f1e9-c646-4a4a-9ce5-71ebd64eefb2
+2025-04-14 15:25:54,797 - INFO - app - Processing job: d47fdada-4d3a-4ec3-847c-4856628f2531
+2025-04-14 15:25:54,799 - INFO - app - Job d47fdada-4d3a-4ec3-847c-4856628f2531: start location: (41.7954469271948, 12.605878425210221), end location: None, radius: None, polygon: [{'longitude': 12.604923558801147, 'latitude': 41.79506299045937}, {'longitude': 12.608270955651534, 'latitude': 41.79207940369986}, {'longitude': 12.609247279733438, 'latitude': 41.79274332375928}, {'longitude': 12.605942798226977, 'latitude': 41.795710882366734}, {'longitude': 12.604923558801147, 'latitude': 41.79506299045937}], middle points: []
+2025-04-14 15:25:54,800 - INFO - app - Processing job: 45f5f1e9-c646-4a4a-9ce5-71ebd64eefb2
+2025-04-14 15:25:54,801 - INFO - app - Job 45f5f1e9-c646-4a4a-9ce5-71ebd64eefb2: start location: (41.7954469271948, 12.605878425210221), end location: None, radius: None, polygon: [{'longitude': 12.604923558801147, 'latitude': 41.79506299045937}, {'longitude': 12.608270955651534, 'latitude': 41.79207940369986}, {'longitude': 12.609247279733438, 'latitude': 41.79274332375928}, {'longitude': 12.605942798226977, 'latitude': 41.795710882366734}, {'longitude': 12.604923558801147, 'latitude': 41.79506299045937}], middle points: []
+2025-04-14 15:25:54,801 - INFO - utils.route_planner_class - Network type: DRIVE
+2025-04-14 15:25:54,801 - INFO - utils.route_planner_class - Network type: WALK
+2025-04-14 15:25:54,801 - INFO - utils.route_planner_class - Truncate by edge: False, <class 'bool'>
+2025-04-14 15:25:54,801 - INFO - utils.route_planner_class - Truncate by edge: False, <class 'bool'>
+2025-04-14 15:25:54,801 - INFO - utils.route_planner_class - Simplify: False, True
+2025-04-14 15:25:54,802 - INFO - utils.route_planner_class - Simplify: False, True
+2025-04-14 15:25:54,802 - INFO - utils.route_planner_class - Retain: False, True
+2025-04-14 15:25:54,802 - INFO - utils.route_planner_class - Retain: False, True
+2025-04-14 15:25:56,294 - ERROR - utils.route_planner_class - Error fetching graph: This graph has already been simplified, cannot simplify it again.
+2025-04-14 15:25:56,295 - ERROR - app - Error in job 45f5f1e9-c646-4a4a-9ce5-71ebd64eefb2: Graph could not be fetched for the given polygon.
+2025-04-14 15:25:56,295 - ERROR - app - Error processing job 45f5f1e9-c646-4a4a-9ce5-71ebd64eefb2: Graph could not be fetched for the given polygon.
+2025-04-14 15:25:56,698 - ERROR - utils.route_planner_class - Error fetching graph: This graph has already been simplified, cannot simplify it again.
+2025-04-14 15:25:56,698 - ERROR - app - Error in job d47fdada-4d3a-4ec3-847c-4856628f2531: Graph could not be fetched for the given polygon.
+2025-04-14 15:25:56,698 - ERROR - app - Error processing job d47fdada-4d3a-4ec3-847c-4856628f2531: Graph could not be fetched for the given polygon.
+2025-04-14 15:27:06,404 - INFO - app - Started job 4865747e-fafe-498c-b65b-f243f57535e7
+2025-04-14 15:27:06,405 - INFO - app - Processing job: 4865747e-fafe-498c-b65b-f243f57535e7
+2025-04-14 15:27:06,406 - INFO - app - Job 4865747e-fafe-498c-b65b-f243f57535e7: start location: (41.795447533347016, 12.60592757525157), end location: None, radius: None, polygon: [{'longitude': 12.604930993389047, 'latitude': 41.795013173964776}, {'longitude': 12.608411363893822, 'latitude': 41.79204116237378}, {'longitude': 12.609093639169487, 'latitude': 41.792789893663695}, {'longitude': 12.6058662471373, 'latitude': 41.795687572795686}, {'longitude': 12.604930993389047, 'latitude': 41.795013173964776}], middle points: []
+2025-04-14 15:27:06,406 - INFO - utils.route_planner_class - Network type: DRIVE
+2025-04-14 15:27:06,406 - INFO - utils.route_planner_class - Truncate by edge: False, <class 'bool'>
+2025-04-14 15:27:06,407 - INFO - utils.route_planner_class - Simplify: False, True
+2025-04-14 15:27:06,407 - INFO - utils.route_planner_class - Retain: False, True
+2025-04-14 15:27:07,382 - ERROR - utils.route_planner_class - Error fetching graph: This graph has already been simplified, cannot simplify it again.
+2025-04-14 15:27:07,382 - ERROR - app - Error in job 4865747e-fafe-498c-b65b-f243f57535e7: Graph could not be fetched for the given polygon.
+2025-04-14 15:27:07,383 - ERROR - app - Error processing job 4865747e-fafe-498c-b65b-f243f57535e7: Graph could not be fetched for the given polygon.
+2025-04-14 15:47:44,209 - INFO - app - Started job 1577d6b3-306a-4299-ac65-89746483d155
+2025-04-14 15:47:44,209 - INFO - app - Processing job: 1577d6b3-306a-4299-ac65-89746483d155
+2025-04-14 15:47:44,210 - INFO - app - Job 1577d6b3-306a-4299-ac65-89746483d155: start location: (41.79545191337223, 12.60588466076726), end location: None, radius: None, polygon: [{'longitude': 12.604888078904736, 'latitude': 41.79501183874521}, {'longitude': 12.608268791223622, 'latitude': 41.7921541377811}, {'longitude': 12.609196378957364, 'latitude': 41.79282285122545}, {'longitude': 12.605838664682153, 'latitude': 41.795657661511854}, {'longitude': 12.604888078904736, 'latitude': 41.79501183874521}], middle points: []
+2025-04-14 15:47:44,210 - INFO - utils.route_planner_class - Network type: DRIVE
+2025-04-14 15:47:44,211 - INFO - utils.route_planner_class - Truncate by edge: False, <class 'bool'>
+2025-04-14 15:47:44,211 - INFO - utils.route_planner_class - Simplify: False, True
+2025-04-14 15:47:44,211 - INFO - utils.route_planner_class - Retain: False, True
+2025-04-14 15:47:45,054 - ERROR - utils.route_planner_class - Error fetching graph: This graph has already been simplified, cannot simplify it again.
+2025-04-14 15:47:45,054 - ERROR - app - Error in job 1577d6b3-306a-4299-ac65-89746483d155: Graph could not be fetched for the given polygon.
+2025-04-14 15:47:45,054 - ERROR - app - Error processing job 1577d6b3-306a-4299-ac65-89746483d155: Graph could not be fetched for the given polygon.
+2025-04-14 15:49:59,767 - INFO - utils.route_planner_class - Flask application started, logging initialized!
+2025-04-14 15:49:59,767 - INFO - app - Flask application started, logging initialized!
+2025-04-14 15:49:59,768 - INFO - app - Attempting to connect to MongoDB...
+2025-04-14 15:49:59,772 - INFO - app - Connected to MongoDB successfully.
+2025-04-14 15:49:59,786 - INFO - app - Started job c07d8e4b-5236-47cb-89b1-cdc7b9227c0c
+2025-04-14 15:49:59,786 - INFO - app - Processing job: c07d8e4b-5236-47cb-89b1-cdc7b9227c0c
+2025-04-14 15:49:59,787 - INFO - app - Job c07d8e4b-5236-47cb-89b1-cdc7b9227c0c: start location: (41.79544619813694, 12.605922990838934), end location: None, radius: None, polygon: [{'longitude': 12.604918742961871, 'latitude': 41.79498326236626}, {'longitude': 12.608268791223622, 'latitude': 41.79203982709274}, {'longitude': 12.609319035186928, 'latitude': 41.79276569650281}, {'longitude': 12.605945988882638, 'latitude': 41.79568623759016}, {'longitude': 12.604918742961871, 'latitude': 41.79498326236626}], middle points: []
+2025-04-14 15:49:59,788 - INFO - utils.route_planner_class - Network type: WALK
+2025-04-14 15:49:59,788 - INFO - utils.route_planner_class - Truncate by edge: False, <class 'bool'>
+2025-04-14 15:49:59,788 - INFO - utils.route_planner_class - Simplify: False, True
+2025-04-14 15:49:59,788 - INFO - utils.route_planner_class - Retain: False, True
+2025-04-14 15:49:59,896 - INFO - app - Started job eebe2bb2-2daa-4f00-b03c-dacffb05367d
+2025-04-14 15:49:59,971 - INFO - app - Processing job: eebe2bb2-2daa-4f00-b03c-dacffb05367d
+2025-04-14 15:49:59,973 - INFO - app - Job eebe2bb2-2daa-4f00-b03c-dacffb05367d: start location: (41.79544619813694, 12.605922990838934), end location: None, radius: None, polygon: [{'longitude': 12.604918742961871, 'latitude': 41.79498326236626}, {'longitude': 12.608268791223622, 'latitude': 41.79203982709274}, {'longitude': 12.609319035186928, 'latitude': 41.79276569650281}, {'longitude': 12.605945988882638, 'latitude': 41.79568623759016}, {'longitude': 12.604918742961871, 'latitude': 41.79498326236626}], middle points: []
+2025-04-14 15:49:59,975 - INFO - utils.route_planner_class - Network type: DRIVE
+2025-04-14 15:49:59,976 - INFO - utils.route_planner_class - Truncate by edge: False, <class 'bool'>
+2025-04-14 15:49:59,976 - INFO - utils.route_planner_class - Simplify: False, True
+2025-04-14 15:49:59,976 - INFO - utils.route_planner_class - Retain: False, True
+2025-04-14 15:50:01,953 - INFO - utils.route_planner_class - Computing routes from start node within the polygon...
+2025-04-14 15:50:03,167 - INFO - utils.route_planner_class - Computing routes from start node within the polygon...
+2025-04-14 15:50:03,329 - INFO - utils.route_planner_class - Found 67 unique routes
+2025-04-14 15:50:03,340 - INFO - app - Job eebe2bb2-2daa-4f00-b03c-dacffb05367d: processed 67 routes
+2025-04-14 15:50:03,959 - INFO - app - Job eebe2bb2-2daa-4f00-b03c-dacffb05367d completed successfully
+2025-04-14 15:50:37,347 - INFO - utils.route_planner_class - Found 164979 unique routes
+2025-04-14 15:50:39,567 - INFO - app - Job c07d8e4b-5236-47cb-89b1-cdc7b9227c0c: processed 164979 routes
+2025-04-14 15:50:59,319 - INFO - app - Started job 9f1b36f6-bc3a-4fad-bf38-8c9aa55e2f29
+2025-04-14 15:50:59,320 - INFO - app - Processing job: 9f1b36f6-bc3a-4fad-bf38-8c9aa55e2f29
+2025-04-14 15:50:59,321 - INFO - app - Job 9f1b36f6-bc3a-4fad-bf38-8c9aa55e2f29: start location: (41.795447589834964, 12.60592067187801), end location: None, radius: None, polygon: [{'longitude': 12.605044087478262, 'latitude': 41.79501019370062}, {'longitude': 12.608226019826304, 'latitude': 41.79220564168011}, {'longitude': 12.609095701986433, 'latitude': 41.79279743810113}, {'longitude': 12.605913769638477, 'latitude': 41.79556594356967}, {'longitude': 12.605044087478262, 'latitude': 41.79501019370062}], middle points: []
+2025-04-14 15:50:59,322 - INFO - utils.route_planner_class - Network type: DRIVE
+2025-04-14 15:50:59,322 - INFO - utils.route_planner_class - Truncate by edge: False, <class 'bool'>
+2025-04-14 15:50:59,322 - INFO - utils.route_planner_class - Simplify: False, True
+2025-04-14 15:50:59,322 - INFO - utils.route_planner_class - Retain: False, True
+2025-04-14 15:51:00,581 - INFO - utils.route_planner_class - Computing routes from start node within the polygon...
+2025-04-14 15:51:00,600 - INFO - utils.route_planner_class - Found 67 unique routes
+2025-04-14 15:51:00,600 - INFO - app - Job 9f1b36f6-bc3a-4fad-bf38-8c9aa55e2f29: processed 67 routes
+2025-04-14 15:51:00,659 - INFO - app - Job 9f1b36f6-bc3a-4fad-bf38-8c9aa55e2f29 completed successfully
+2025-04-14 15:53:51,094 - INFO - app - Job c07d8e4b-5236-47cb-89b1-cdc7b9227c0c completed successfully
+2025-04-14 15:54:10,501 - INFO - app - Started job 0f0b2cc5-268e-4a5e-aeb0-719bd28d8562
+2025-04-14 15:54:10,502 - INFO - app - Processing job: 0f0b2cc5-268e-4a5e-aeb0-719bd28d8562
+2025-04-14 15:54:10,502 - INFO - app - Job 0f0b2cc5-268e-4a5e-aeb0-719bd28d8562: start location: (41.79556661911664, 12.60606052524767), end location: None, radius: None, polygon: [{'longitude': 12.604761376373062, 'latitude': 41.79502853279922}, {'longitude': 12.608189685903739, 'latitude': 41.7919523859548}, {'longitude': 12.609512893090482, 'latitude': 41.79283130011757}, {'longitude': 12.606192845966603, 'latitude': 41.79588946873929}, {'longitude': 12.604761376373062, 'latitude': 41.79502853279922}], middle points: []
+2025-04-14 15:54:10,503 - INFO - utils.route_planner_class - Network type: DRIVE
+2025-04-14 15:54:10,503 - INFO - utils.route_planner_class - Truncate by edge: False, <class 'bool'>
+2025-04-14 15:54:10,503 - INFO - utils.route_planner_class - Simplify: False, True
+2025-04-14 15:54:10,503 - INFO - utils.route_planner_class - Retain: False, True
+2025-04-14 15:54:11,387 - INFO - utils.route_planner_class - Computing routes from start node within the polygon...
+2025-04-14 15:54:11,407 - INFO - utils.route_planner_class - Found 67 unique routes
+2025-04-14 15:54:11,407 - INFO - app - Job 0f0b2cc5-268e-4a5e-aeb0-719bd28d8562: processed 67 routes
+2025-04-14 15:54:11,488 - INFO - app - Job 0f0b2cc5-268e-4a5e-aeb0-719bd28d8562 completed successfully
+2025-04-14 15:55:48,313 - INFO - app - Started job ed91ed7d-ece5-4890-b784-3efa35e4dde9
+2025-04-14 15:55:48,314 - INFO - app - Processing job: ed91ed7d-ece5-4890-b784-3efa35e4dde9
+2025-04-14 15:55:48,315 - INFO - app - Job ed91ed7d-ece5-4890-b784-3efa35e4dde9: start location: (41.795468394191005, 12.605931056929478), end location: None, radius: None, polygon: [{'longitude': 12.605086002862748, 'latitude': 41.794990049906744}, {'longitude': 12.605868460332175, 'latitude': 41.79430169455031}, {'longitude': 12.606676999717763, 'latitude': 41.79360166457133}, {'longitude': 12.606744812698395, 'latitude': 41.79355110655467}, {'longitude': 12.608179318059257, 'latitude': 41.792314367265476}, {'longitude': 12.608920044462764, 'latitude': 41.792854957500765}, {'longitude': 12.605920624164582, 'latitude': 41.79548783900552}, {'longitude': 12.605086002862748, 'latitude': 41.794990049906744}], middle points: []
+2025-04-14 15:55:48,315 - INFO - utils.route_planner_class - Network type: DRIVE
+2025-04-14 15:55:48,315 - INFO - utils.route_planner_class - Truncate by edge: False, <class 'bool'>
+2025-04-14 15:55:48,315 - INFO - utils.route_planner_class - Simplify: False, True
+2025-04-14 15:55:48,316 - INFO - utils.route_planner_class - Retain: False, True
+2025-04-14 15:55:51,295 - INFO - utils.route_planner_class - Computing routes from start node within the polygon...
+2025-04-14 15:55:51,310 - INFO - utils.route_planner_class - Found 37 unique routes
+2025-04-14 15:55:51,310 - INFO - app - Job ed91ed7d-ece5-4890-b784-3efa35e4dde9: processed 37 routes
+2025-04-14 15:55:51,350 - INFO - app - Job ed91ed7d-ece5-4890-b784-3efa35e4dde9 completed successfully
+2025-04-15 06:36:25,978 - INFO - utils.route_planner_class - Flask application started, logging initialized!
+2025-04-15 06:36:25,978 - INFO - app - Flask application started, logging initialized!
+2025-04-15 06:36:25,978 - INFO - app - Attempting to connect to MongoDB...
+2025-04-15 06:36:25,983 - INFO - app - Connected to MongoDB successfully.
+2025-04-15 06:36:25,998 - INFO - app - Started job 6c4ab21a-d8ae-4965-b317-efd5cc9d991d
+2025-04-15 06:36:25,999 - INFO - app - Processing job: 6c4ab21a-d8ae-4965-b317-efd5cc9d991d
+2025-04-15 06:36:26,000 - INFO - app - Job 6c4ab21a-d8ae-4965-b317-efd5cc9d991d: start location: (41.79543182539808, 12.60593020334312), end location: None, radius: None, polygon: [{'longitude': 12.605030385265138, 'latitude': 41.79490719150107}, {'longitude': 12.608214356926624, 'latitude': 41.79216354428806}, {'longitude': 12.609125711133942, 'latitude': 41.79276560859327}, {'longitude': 12.605918667213814, 'latitude': 41.79560383557666}, {'longitude': 12.604903487844297, 'latitude': 41.79500179793115}, {'longitude': 12.605030385265138, 'latitude': 41.79490719150107}], middle points: []
+2025-04-15 06:36:26,000 - INFO - utils.route_planner_class - Network type: DRIVE
+2025-04-15 06:36:26,000 - INFO - utils.route_planner_class - Truncate by edge: False, <class 'bool'>
+2025-04-15 06:36:26,000 - INFO - utils.route_planner_class - Simplify: False, True
+2025-04-15 06:36:26,000 - INFO - utils.route_planner_class - Retain: False, True
+2025-04-15 06:36:26,628 - INFO - utils.route_planner_class - Computing routes from start node within the polygon...
+2025-04-15 06:36:26,652 - INFO - utils.route_planner_class - Found 67 unique routes
+2025-04-15 06:36:26,652 - INFO - app - Job 6c4ab21a-d8ae-4965-b317-efd5cc9d991d: processed 67 routes
+2025-04-15 06:36:26,736 - INFO - app - Job 6c4ab21a-d8ae-4965-b317-efd5cc9d991d completed successfully
+2025-04-15 07:51:13,507 - INFO - utils.route_planner_class - Flask application started, logging initialized!
+2025-04-15 07:51:13,508 - INFO - app - Flask application started, logging initialized!
+2025-04-15 07:51:13,508 - INFO - app - Attempting to connect to MongoDB...
+2025-04-15 07:51:13,512 - INFO - app - Connected to MongoDB successfully.
+2025-04-15 07:51:13,534 - INFO - app - Started job e23bf0ec-3097-4732-b029-2f0a22209b5b
+2025-04-15 07:51:13,535 - INFO - app - Processing job: e23bf0ec-3097-4732-b029-2f0a22209b5b
+2025-04-15 07:51:13,535 - INFO - app - Job e23bf0ec-3097-4732-b029-2f0a22209b5b: start location: (41.79543823921267, 12.605934839499668), end location: None, radius: None, polygon: [{'longitude': 12.6050253668312, 'latitude': 41.79500520488028}, {'longitude': 12.608265840877948, 'latitude': 41.792207504672604}, {'longitude': 12.60906067413535, 'latitude': 41.79278870702558}, {'longitude': 12.605896626362238, 'latitude': 41.79554649733856}, {'longitude': 12.6050253668312, 'latitude': 41.79500520488028}], middle points: []
+2025-04-15 07:51:13,536 - INFO - utils.route_planner_class - Network type: DRIVE
+2025-04-15 07:51:13,536 - INFO - utils.route_planner_class - Truncate by edge: False, <class 'bool'>
+2025-04-15 07:51:13,536 - INFO - utils.route_planner_class - Simplify: False, True
+2025-04-15 07:51:13,536 - INFO - utils.route_planner_class - Retain: False, True
+2025-04-15 07:51:14,397 - INFO - utils.route_planner_class - Computing routes from start node within the polygon...
+2025-04-15 07:51:14,414 - INFO - utils.route_planner_class - Found 67 unique routes
+2025-04-15 07:51:14,414 - INFO - app - Job e23bf0ec-3097-4732-b029-2f0a22209b5b: processed 67 routes
+2025-04-15 07:51:14,480 - INFO - app - Job e23bf0ec-3097-4732-b029-2f0a22209b5b completed successfully
+2025-04-15 07:51:38,651 - INFO - utils.route_planner_class - Flask application started, logging initialized!
+2025-04-15 07:51:38,651 - INFO - app - Flask application started, logging initialized!
+2025-04-15 07:51:38,651 - INFO - app - Attempting to connect to MongoDB...
+2025-04-15 07:51:38,656 - INFO - app - Connected to MongoDB successfully.
+2025-04-15 07:51:38,671 - INFO - app - Started job 9423a747-0ac0-41cb-a899-d909b4deca56
+2025-04-15 07:51:38,671 - INFO - app - Processing job: 9423a747-0ac0-41cb-a899-d909b4deca56
+2025-04-15 07:51:38,672 - INFO - app - Job 9423a747-0ac0-41cb-a899-d909b4deca56: start location: (41.79543823921267, 12.605934839499668), end location: None, radius: None, polygon: [{'longitude': 12.6050253668312, 'latitude': 41.79500520488028}, {'longitude': 12.608265840877948, 'latitude': 41.792207504672604}, {'longitude': 12.60906067413535, 'latitude': 41.79278870702558}, {'longitude': 12.605896626362238, 'latitude': 41.79554649733856}, {'longitude': 12.6050253668312, 'latitude': 41.79500520488028}], middle points: []
+2025-04-15 07:51:38,673 - INFO - utils.route_planner_class - Network type: WALK
+2025-04-15 07:51:38,673 - INFO - utils.route_planner_class - Truncate by edge: False, <class 'bool'>
+2025-04-15 07:51:38,673 - INFO - utils.route_planner_class - Simplify: True, True
+2025-04-15 07:51:38,673 - INFO - utils.route_planner_class - Retain: False, True
+2025-04-15 07:51:38,777 - INFO - app - Started job c39e0d44-7e47-4cae-995e-a85c4597f1ba
+2025-04-15 07:51:38,852 - INFO - app - Processing job: c39e0d44-7e47-4cae-995e-a85c4597f1ba
+2025-04-15 07:51:38,856 - INFO - app - Job c39e0d44-7e47-4cae-995e-a85c4597f1ba: start location: (41.79543823921267, 12.605934839499668), end location: None, radius: None, polygon: [{'longitude': 12.6050253668312, 'latitude': 41.79500520488028}, {'longitude': 12.608265840877948, 'latitude': 41.792207504672604}, {'longitude': 12.60906067413535, 'latitude': 41.79278870702558}, {'longitude': 12.605896626362238, 'latitude': 41.79554649733856}, {'longitude': 12.6050253668312, 'latitude': 41.79500520488028}], middle points: []
+2025-04-15 07:51:38,857 - INFO - utils.route_planner_class - Network type: DRIVE
+2025-04-15 07:51:38,857 - INFO - utils.route_planner_class - Truncate by edge: False, <class 'bool'>
+2025-04-15 07:51:38,857 - INFO - utils.route_planner_class - Simplify: True, True
+2025-04-15 07:51:38,858 - INFO - utils.route_planner_class - Retain: False, True
+2025-04-15 07:51:39,671 - INFO - utils.route_planner_class - Computing routes from start node within the polygon...
+2025-04-15 07:51:39,689 - INFO - utils.route_planner_class - Found 67 unique routes
+2025-04-15 07:51:39,690 - INFO - app - Job c39e0d44-7e47-4cae-995e-a85c4597f1ba: processed 67 routes
+2025-04-15 07:51:39,771 - INFO - app - Job c39e0d44-7e47-4cae-995e-a85c4597f1ba completed successfully
+2025-04-15 07:51:40,168 - INFO - utils.route_planner_class - Computing routes from start node within the polygon...
+2025-04-15 07:51:53,359 - INFO - utils.route_planner_class - Found 81839 unique routes
+2025-04-15 07:51:54,394 - INFO - app - Job 9423a747-0ac0-41cb-a899-d909b4deca56: processed 81839 routes
+2025-04-15 07:52:07,200 - INFO - app - Started job f419813d-14b9-40fd-8377-35dacfddf33e
+2025-04-15 07:52:07,202 - INFO - app - Processing job: f419813d-14b9-40fd-8377-35dacfddf33e
+2025-04-15 07:52:07,203 - INFO - app - Job f419813d-14b9-40fd-8377-35dacfddf33e: start location: (41.7954268436099, 12.60591191161771), end location: None, radius: None, polygon: [{'longitude': 12.604987153693827, 'latitude': 41.79500520488028}, {'longitude': 12.608219985112868, 'latitude': 41.792201806584046}, {'longitude': 12.609083602017336, 'latitude': 41.79277731095175}, {'longitude': 12.605881341106851, 'latitude': 41.79556928849948}, {'longitude': 12.604987153693827, 'latitude': 41.79500520488028}], middle points: []
+2025-04-15 07:52:07,203 - INFO - utils.route_planner_class - Network type: DRIVE
+2025-04-15 07:52:07,203 - INFO - utils.route_planner_class - Truncate by edge: False, <class 'bool'>
+2025-04-15 07:52:07,204 - INFO - utils.route_planner_class - Simplify: True, True
+2025-04-15 07:52:07,204 - INFO - utils.route_planner_class - Retain: False, True
+2025-04-15 07:52:08,058 - INFO - utils.route_planner_class - Computing routes from start node within the polygon...
+2025-04-15 07:52:08,088 - INFO - utils.route_planner_class - Found 67 unique routes
+2025-04-15 07:52:08,088 - INFO - app - Job f419813d-14b9-40fd-8377-35dacfddf33e: processed 67 routes
+2025-04-15 07:52:08,169 - INFO - app - Job f419813d-14b9-40fd-8377-35dacfddf33e completed successfully
+2025-04-15 07:54:27,812 - INFO - utils.route_planner_class - Flask application started, logging initialized!
+2025-04-15 07:54:27,813 - INFO - app - Flask application started, logging initialized!
+2025-04-15 07:54:27,813 - INFO - app - Attempting to connect to MongoDB...
+2025-04-15 07:54:27,817 - INFO - app - Connected to MongoDB successfully.
+2025-04-15 07:54:27,831 - INFO - app - Started job beccf6ab-9a5c-47eb-9acc-ab31aab449a1
+2025-04-15 07:54:27,832 - INFO - app - Processing job: beccf6ab-9a5c-47eb-9acc-ab31aab449a1
+2025-04-15 07:54:27,833 - INFO - app - Job beccf6ab-9a5c-47eb-9acc-ab31aab449a1: start location: (41.795433125058025, 12.605928659387274), end location: None, radius: None, polygon: [{'longitude': 12.605019885036711, 'latitude': 41.795034141143276}, {'longitude': 12.608180400279764, 'latitude': 41.792150843933456}, {'longitude': 12.609190149559879, 'latitude': 41.79282839279497}, {'longitude': 12.605908464402546, 'latitude': 41.79559874029323}, {'longitude': 12.605019885036711, 'latitude': 41.795034141143276}], middle points: []
+2025-04-15 07:54:27,833 - INFO - utils.route_planner_class - Network type: DRIVE
+2025-04-15 07:54:27,833 - INFO - utils.route_planner_class - Truncate by edge: False
+2025-04-15 07:54:27,834 - INFO - utils.route_planner_class - Simplify: True
+2025-04-15 07:54:27,834 - INFO - utils.route_planner_class - Retain: False
+2025-04-15 07:54:28,554 - INFO - utils.route_planner_class - Computing routes from start node within the polygon...
+2025-04-15 07:54:28,576 - INFO - utils.route_planner_class - Found 67 unique routes
+2025-04-15 07:54:28,577 - INFO - app - Job beccf6ab-9a5c-47eb-9acc-ab31aab449a1: processed 67 routes
+2025-04-15 07:54:28,661 - INFO - app - Job beccf6ab-9a5c-47eb-9acc-ab31aab449a1 completed successfully
+2025-04-15 07:55:17,639 - INFO - utils.route_planner_class - Flask application started, logging initialized!
+2025-04-15 07:55:17,639 - INFO - app - Flask application started, logging initialized!
+2025-04-15 07:55:17,639 - INFO - app - Attempting to connect to MongoDB...
+2025-04-15 07:55:17,644 - INFO - app - Connected to MongoDB successfully.
+2025-04-15 07:55:17,658 - INFO - app - Started job e30d7d67-1131-4e96-81f3-d43545056e05
+2025-04-15 07:55:17,658 - INFO - app - Processing job: e30d7d67-1131-4e96-81f3-d43545056e05
+2025-04-15 07:55:17,659 - INFO - app - Job e30d7d67-1131-4e96-81f3-d43545056e05: start location: (41.79545570897906, 12.605898366909457), end location: None, radius: None, polygon: [{'longitude': 12.604979495065777, 'latitude': 41.79498897299612}, {'longitude': 12.60820059526597, 'latitude': 41.79212825884795}, {'longitude': 12.609190149559879, 'latitude': 41.79278322309344}, {'longitude': 12.605888269416397, 'latitude': 41.795576156422584}, {'longitude': 12.604979495065777, 'latitude': 41.79498897299612}], middle points: []
+2025-04-15 07:55:17,660 - INFO - utils.route_planner_class - Network type: DRIVE
+2025-04-15 07:55:17,660 - INFO - utils.route_planner_class - Truncate by edge: False
+2025-04-15 07:55:17,660 - INFO - utils.route_planner_class - Simplify: False
+2025-04-15 07:55:17,660 - INFO - utils.route_planner_class - Retain: False
+2025-04-15 07:55:18,376 - INFO - utils.route_planner_class - Computing routes from start node within the polygon...
+2025-04-15 07:55:18,405 - INFO - utils.route_planner_class - Found 67 unique routes
+2025-04-15 07:55:18,406 - INFO - app - Job e30d7d67-1131-4e96-81f3-d43545056e05: processed 67 routes
+2025-04-15 07:55:18,490 - INFO - app - Job e30d7d67-1131-4e96-81f3-d43545056e05 completed successfully
+2025-04-15 07:55:41,416 - INFO - app - Started job 5aeb2524-1c57-4700-b60d-6f5c8d038861
+2025-04-15 07:55:41,417 - INFO - app - Processing job: 5aeb2524-1c57-4700-b60d-6f5c8d038861
+2025-04-15 07:55:41,418 - INFO - app - Job 5aeb2524-1c57-4700-b60d-6f5c8d038861: start location: (41.92295437139248, 12.507768348942562), end location: None, radius: 206, polygon: None, middle points: []
+2025-04-15 07:55:41,418 - INFO - utils.route_planner_class - Fetching graph for location (41.92295437139248, 12.507768348942562) with radius 0.21 km
+2025-04-15 07:55:41,418 - INFO - utils.route_planner_class - Network type: DRIVE
+2025-04-15 07:55:41,418 - INFO - utils.route_planner_class - Truncate by edge: False, <class 'bool'>
+2025-04-15 07:55:41,418 - INFO - utils.route_planner_class - Simplify: False
+2025-04-15 07:55:41,418 - INFO - utils.route_planner_class - Retain: False
+2025-04-15 07:55:42,779 - INFO - utils.route_planner_class - Graph fetched: 51 nodes, 90 edges
+2025-04-15 07:55:42,782 - INFO - utils.route_planner_class - Computing routes from start node...
+2025-04-15 07:55:43,226 - INFO - utils.route_planner_class - Found 2320 unique routes
+2025-04-15 07:55:43,244 - INFO - app - Job 5aeb2524-1c57-4700-b60d-6f5c8d038861: processed 2320 routes
+2025-04-15 07:55:46,257 - INFO - app - Job 5aeb2524-1c57-4700-b60d-6f5c8d038861 completed successfully
+2025-04-15 07:56:09,689 - INFO - utils.route_planner_class - Flask application started, logging initialized!
+2025-04-15 07:56:09,690 - INFO - app - Flask application started, logging initialized!
+2025-04-15 07:56:09,690 - INFO - app - Attempting to connect to MongoDB...
+2025-04-15 07:56:09,694 - INFO - app - Connected to MongoDB successfully.
+2025-04-15 07:56:09,707 - INFO - app - Started job 54634e80-149b-4376-bd0a-68007ab43ce7
+2025-04-15 07:56:09,707 - INFO - app - Processing job: 54634e80-149b-4376-bd0a-68007ab43ce7
+2025-04-15 07:56:09,708 - INFO - app - Job 54634e80-149b-4376-bd0a-68007ab43ce7: start location: (41.92295437139248, 12.507799822268169), end location: None, radius: 145, polygon: None, middle points: []
+2025-04-15 07:56:09,709 - INFO - utils.route_planner_class - Fetching graph for location (41.92295437139248, 12.507799822268169) with radius 0.14 km
+2025-04-15 07:56:09,709 - INFO - utils.route_planner_class - Network type: DRIVE
+2025-04-15 07:56:09,709 - INFO - utils.route_planner_class - Truncate by edge: False, <class 'bool'>
+2025-04-15 07:56:09,709 - INFO - utils.route_planner_class - Simplify: True
+2025-04-15 07:56:09,709 - INFO - utils.route_planner_class - Retain: False
+2025-04-15 07:56:10,954 - INFO - utils.route_planner_class - Graph fetched: 31 nodes, 49 edges
+2025-04-15 07:56:10,957 - INFO - utils.route_planner_class - Computing routes from start node...
+2025-04-15 07:56:11,005 - INFO - utils.route_planner_class - Found 84 unique routes
+2025-04-15 07:56:11,005 - INFO - app - Job 54634e80-149b-4376-bd0a-68007ab43ce7: processed 84 routes
+2025-04-15 07:56:11,077 - INFO - app - Job 54634e80-149b-4376-bd0a-68007ab43ce7 completed successfully
+2025-04-15 07:58:13,746 - INFO - utils.route_planner_class - Flask application started, logging initialized!
+2025-04-15 07:58:13,746 - INFO - app - Flask application started, logging initialized!
+2025-04-15 07:58:13,746 - INFO - app - Attempting to connect to MongoDB...
+2025-04-15 07:58:13,751 - INFO - app - Connected to MongoDB successfully.
+2025-04-15 07:58:13,765 - INFO - app - Started job 24d43e2f-a3fe-4b19-82c9-25907323e518
+2025-04-15 07:58:13,765 - INFO - app - Processing job: 24d43e2f-a3fe-4b19-82c9-25907323e518
+2025-04-15 07:58:13,766 - INFO - app - Job 24d43e2f-a3fe-4b19-82c9-25907323e518: start location: (41.92291583815788, 12.50776531790288), end location: None, radius: 148, polygon: None, middle points: []
+2025-04-15 07:58:13,766 - INFO - utils.route_planner_class - Fetching graph for location (41.92291583815788, 12.50776531790288) with radius 0.15 km
+2025-04-15 07:58:13,766 - INFO - utils.route_planner_class - Network type: DRIVE
+2025-04-15 07:58:13,766 - INFO - utils.route_planner_class - Truncate by edge: False, <class 'bool'>
+2025-04-15 07:58:13,766 - INFO - utils.route_planner_class - Simplify: True
+2025-04-15 07:58:13,767 - INFO - utils.route_planner_class - Retain: False
+2025-04-15 07:58:14,867 - INFO - utils.route_planner_class - Graph fetched: 151 nodes, 182 edges
+2025-04-15 07:58:14,870 - INFO - utils.route_planner_class - Computing routes from start node...
+2025-04-15 07:58:15,216 - INFO - utils.route_planner_class - Found 254 unique routes
+2025-04-15 07:58:15,219 - INFO - app - Job 24d43e2f-a3fe-4b19-82c9-25907323e518: processed 254 routes
+2025-04-15 07:58:15,529 - INFO - app - Job 24d43e2f-a3fe-4b19-82c9-25907323e518 completed successfully
+2025-04-15 07:58:45,391 - INFO - utils.route_planner_class - Flask application started, logging initialized!
+2025-04-15 07:58:45,391 - INFO - app - Flask application started, logging initialized!
+2025-04-15 07:58:45,392 - INFO - app - Attempting to connect to MongoDB...
+2025-04-15 07:58:45,396 - INFO - app - Connected to MongoDB successfully.
+2025-04-15 07:58:45,409 - INFO - app - Started job fc31c973-5247-4ccb-86ca-4758e293dfa6
+2025-04-15 07:58:45,410 - INFO - app - Processing job: fc31c973-5247-4ccb-86ca-4758e293dfa6
+2025-04-15 07:58:45,410 - INFO - app - Job fc31c973-5247-4ccb-86ca-4758e293dfa6: start location: (41.92294184699881, 12.507826490974992), end location: None, radius: 144, polygon: None, middle points: []
+2025-04-15 07:58:45,411 - INFO - utils.route_planner_class - Fetching graph for location (41.92294184699881, 12.507826490974992) with radius 0.14 km
+2025-04-15 07:58:45,411 - INFO - utils.route_planner_class - Network type: DRIVE
+2025-04-15 07:58:45,411 - INFO - utils.route_planner_class - Truncate by edge: False, <class 'bool'>
+2025-04-15 07:58:45,411 - INFO - utils.route_planner_class - Simplify: True
+2025-04-15 07:58:45,411 - INFO - utils.route_planner_class - Retain: False
+2025-04-15 07:58:46,845 - INFO - utils.route_planner_class - Graph fetched: 29 nodes, 45 edges
+2025-04-15 07:58:46,848 - INFO - utils.route_planner_class - Computing routes from start node...
+2025-04-15 07:58:46,888 - INFO - utils.route_planner_class - Found 73 unique routes
+2025-04-15 07:58:46,889 - INFO - app - Job fc31c973-5247-4ccb-86ca-4758e293dfa6: processed 73 routes
+2025-04-15 07:58:46,966 - INFO - app - Job fc31c973-5247-4ccb-86ca-4758e293dfa6 completed successfully
+2025-04-15 08:01:27,051 - INFO - utils.route_planner_class - Flask application started, logging initialized!
+2025-04-15 08:01:27,052 - INFO - app - Flask application started, logging initialized!
+2025-04-15 08:01:27,052 - INFO - app - Attempting to connect to MongoDB...
+2025-04-15 08:01:27,059 - INFO - app - Connected to MongoDB successfully.
+2025-04-15 08:01:27,072 - INFO - app - Started job 27e8bf71-5aa3-40ca-8605-e0a64e833f3a
+2025-04-15 08:01:27,073 - INFO - app - Processing job: 27e8bf71-5aa3-40ca-8605-e0a64e833f3a
+2025-04-15 08:01:27,074 - INFO - app - Job 27e8bf71-5aa3-40ca-8605-e0a64e833f3a: start location: (41.92294184699881, 12.507826490974992), end location: None, radius: 144, polygon: None, middle points: []
+2025-04-15 08:01:27,074 - INFO - utils.route_planner_class - Fetching graph for location (41.92294184699881, 12.507826490974992) with radius 0.14 km
+2025-04-15 08:01:27,074 - INFO - utils.route_planner_class - Network type: WALK
+2025-04-15 08:01:27,074 - INFO - utils.route_planner_class - Truncate by edge: False, <class 'bool'>
+2025-04-15 08:01:27,074 - INFO - utils.route_planner_class - Simplify: True
+2025-04-15 08:01:27,074 - INFO - utils.route_planner_class - Retain: False
+2025-04-15 08:01:29,102 - INFO - utils.route_planner_class - Graph fetched: 60 nodes, 170 edges
+2025-04-15 08:01:29,105 - INFO - utils.route_planner_class - Computing routes from start node...
+2025-04-15 08:02:03,941 - INFO - app - Started job 695630d6-e2b9-43bc-81ef-0ef6cbe1085b
+2025-04-15 08:02:03,968 - INFO - app - Processing job: 695630d6-e2b9-43bc-81ef-0ef6cbe1085b
+2025-04-15 08:02:03,989 - INFO - app - Job 695630d6-e2b9-43bc-81ef-0ef6cbe1085b: start location: (41.922948349207644, 12.507791534933602), end location: None, radius: None, polygon: [{'longitude': 12.50631462541846, 'latitude': 41.92185596574782}, {'longitude': 12.50925096642741, 'latitude': 41.92185596574782}, {'longitude': 12.50925096642741, 'latitude': 41.92404073266747}, {'longitude': 12.50631462541846, 'latitude': 41.92404073266747}, {'longitude': 12.50631462541846, 'latitude': 41.92185596574782}], middle points: []
+2025-04-15 08:02:04,000 - INFO - utils.route_planner_class - Network type: DRIVE
+2025-04-15 08:02:04,010 - INFO - utils.route_planner_class - Truncate by edge: False
+2025-04-15 08:02:04,021 - INFO - utils.route_planner_class - Simplify: True
+2025-04-15 08:02:04,031 - INFO - utils.route_planner_class - Retain: False
+2025-04-15 08:02:06,566 - INFO - utils.route_planner_class - Computing routes from start node within the polygon...
+2025-04-15 08:02:06,846 - INFO - utils.route_planner_class - Found 39 unique routes
+2025-04-15 08:02:06,857 - INFO - app - Job 695630d6-e2b9-43bc-81ef-0ef6cbe1085b: processed 39 routes
+2025-04-15 08:02:07,269 - INFO - app - Job 695630d6-e2b9-43bc-81ef-0ef6cbe1085b completed successfully
+2025-04-15 08:02:43,351 - INFO - app - Started job 99f690b6-2534-4fbc-9f03-89d87d6fe9da
+2025-04-15 08:02:43,370 - INFO - app - Processing job: 99f690b6-2534-4fbc-9f03-89d87d6fe9da
+2025-04-15 08:02:43,386 - INFO - app - Job 99f690b6-2534-4fbc-9f03-89d87d6fe9da: start location: (41.79543688674946, 12.605905695580702), end location: None, radius: None, polygon: [{'longitude': 12.604989402776994, 'latitude': 41.795056104099274}, {'longitude': 12.608286610537363, 'latitude': 41.79202081606084}, {'longitude': 12.609153482061402, 'latitude': 41.792724831032416}, {'longitude': 12.605949153392288, 'latitude': 41.79565622007621}, {'longitude': 12.604989402776994, 'latitude': 41.795056104099274}], middle points: []
+2025-04-15 08:02:43,397 - INFO - utils.route_planner_class - Network type: DRIVE
+2025-04-15 08:02:43,407 - INFO - utils.route_planner_class - Truncate by edge: False
+2025-04-15 08:02:43,418 - INFO - utils.route_planner_class - Simplify: True
+2025-04-15 08:02:43,429 - INFO - utils.route_planner_class - Retain: False
+2025-04-15 08:02:45,190 - INFO - utils.route_planner_class - Computing routes from start node within the polygon...
+2025-04-15 08:02:45,380 - INFO - utils.route_planner_class - Found 67 unique routes
+2025-04-15 08:02:45,391 - INFO - app - Job 99f690b6-2534-4fbc-9f03-89d87d6fe9da: processed 67 routes
+2025-04-15 08:02:45,976 - INFO - app - Job 99f690b6-2534-4fbc-9f03-89d87d6fe9da completed successfully
+2025-04-15 08:04:00,540 - INFO - utils.route_planner_class - Flask application started, logging initialized!
+2025-04-15 08:04:00,541 - INFO - app - Flask application started, logging initialized!
+2025-04-15 08:04:00,541 - INFO - app - Attempting to connect to MongoDB...
+2025-04-15 08:04:00,545 - INFO - app - Connected to MongoDB successfully.
+2025-04-15 08:04:00,559 - INFO - app - Started job 33d3241e-0b2e-4cac-82b6-a07b130ac448
+2025-04-15 08:04:00,560 - INFO - app - Processing job: 33d3241e-0b2e-4cac-82b6-a07b130ac448
+2025-04-15 08:04:00,561 - INFO - app - Job 33d3241e-0b2e-4cac-82b6-a07b130ac448: start location: (41.79546453570211, 12.605952053528938), end location: None, radius: None, polygon: [{'longitude': 12.60498780820484, 'latitude': 41.7950636247181}, {'longitude': 12.608260679350622, 'latitude': 41.792188051748894}, {'longitude': 12.609234196264651, 'latitude': 41.7927963567891}, {'longitude': 12.60598913988727, 'latitude': 41.795651165822136}, {'longitude': 12.60498780820484, 'latitude': 41.7950636247181}], middle points: []
+2025-04-15 08:04:00,561 - INFO - utils.route_planner_class - Network type: DRIVE
+2025-04-15 08:04:00,561 - INFO - utils.route_planner_class - Truncate by edge: False
+2025-04-15 08:04:00,561 - INFO - utils.route_planner_class - Simplify: True
+2025-04-15 08:04:00,561 - INFO - utils.route_planner_class - Retain: False
+2025-04-15 08:04:01,287 - INFO - utils.route_planner_class - Computing routes from start node within the polygon...
+2025-04-15 08:04:01,306 - INFO - utils.route_planner_class - Found 67 unique routes
+2025-04-15 08:04:01,307 - INFO - app - Job 33d3241e-0b2e-4cac-82b6-a07b130ac448: processed 67 routes
+2025-04-15 08:04:01,367 - INFO - app - Job 33d3241e-0b2e-4cac-82b6-a07b130ac448 completed successfully
+2025-04-15 08:04:41,387 - INFO - utils.route_planner_class - Flask application started, logging initialized!
+2025-04-15 08:04:41,387 - INFO - app - Flask application started, logging initialized!
+2025-04-15 08:04:41,387 - INFO - app - Attempting to connect to MongoDB...
+2025-04-15 08:04:41,392 - INFO - app - Connected to MongoDB successfully.
+2025-04-15 08:04:41,406 - INFO - app - Started job 9e9b9b97-4d47-4d3b-a8bf-7de0bd132f70
+2025-04-15 08:04:41,406 - INFO - app - Processing job: 9e9b9b97-4d47-4d3b-a8bf-7de0bd132f70
+2025-04-15 08:04:41,407 - INFO - app - Job 9e9b9b97-4d47-4d3b-a8bf-7de0bd132f70: start location: (41.79545762346481, 12.605914967169241), end location: None, radius: None, polygon: [{'longitude': 12.604922907076684, 'latitude': 41.795008326454365}, {'longitude': 12.608177235043996, 'latitude': 41.79214657619474}, {'longitude': 12.609178566726484, 'latitude': 41.792754881629094}, {'longitude': 12.60586860922092, 'latitude': 41.79561660472976}, {'longitude': 12.604922907076684, 'latitude': 41.795008326454365}], middle points: []
+2025-04-15 08:04:41,408 - INFO - utils.route_planner_class - Network type: DRIVE
+2025-04-15 08:04:41,408 - INFO - utils.route_planner_class - Truncate by edge: False
+2025-04-15 08:04:41,408 - INFO - utils.route_planner_class - Simplify: True
+2025-04-15 08:04:41,408 - INFO - utils.route_planner_class - Retain: False
+2025-04-15 08:04:42,364 - INFO - utils.route_planner_class - Computing routes from start node within the polygon...
+2025-04-15 08:04:42,376 - INFO - utils.route_planner_class - Found 15 unique routes
+2025-04-15 08:04:42,376 - INFO - app - Job 9e9b9b97-4d47-4d3b-a8bf-7de0bd132f70: processed 15 routes
+2025-04-15 08:04:42,391 - INFO - app - Job 9e9b9b97-4d47-4d3b-a8bf-7de0bd132f70 completed successfully
+2025-04-15 08:15:03,315 - INFO - utils.route_planner_class - Flask application started, logging initialized!
+2025-04-15 08:15:03,315 - INFO - app - Flask application started, logging initialized!
+2025-04-15 08:15:03,315 - INFO - app - Attempting to connect to MongoDB...
+2025-04-15 08:15:03,320 - INFO - app - Connected to MongoDB successfully.
+2025-04-15 08:15:03,334 - INFO - app - Started job c2284dd2-eb24-4a35-9610-60bc9541ec02
+2025-04-15 08:15:03,334 - INFO - app - Processing job: c2284dd2-eb24-4a35-9610-60bc9541ec02
+2025-04-15 08:15:03,336 - INFO - app - Job c2284dd2-eb24-4a35-9610-60bc9541ec02: start location: (41.92292400937532, 12.507820003057333), end location: None, radius: 138, polygon: None, middle points: []
+2025-04-15 08:15:03,336 - INFO - utils.route_planner_class - Fetching graph for location (41.92292400937532, 12.507820003057333) with radius 0.14 km
+2025-04-15 08:15:03,336 - INFO - utils.route_planner_class - Network type: DRIVE
+2025-04-15 08:15:03,336 - INFO - utils.route_planner_class - Truncate by edge: False, <class 'bool'>
+2025-04-15 08:15:03,336 - INFO - utils.route_planner_class - Simplify: True
+2025-04-15 08:15:03,336 - INFO - utils.route_planner_class - Retain: False
+2025-04-15 08:15:04,838 - INFO - utils.route_planner_class - Graph fetched: 27 nodes, 42 edges
+2025-04-15 08:15:04,842 - INFO - utils.route_planner_class - Computing routes from start node...
+2025-04-15 08:15:04,876 - INFO - utils.route_planner_class - Found 55 unique routes
+2025-04-15 08:15:04,879 - INFO - app - Job c2284dd2-eb24-4a35-9610-60bc9541ec02: processed 55 routes
+2025-04-15 08:15:04,922 - INFO - app - Job c2284dd2-eb24-4a35-9610-60bc9541ec02 completed successfully
+2025-04-15 08:15:46,651 - INFO - app - Started job 59adde2b-a625-41a5-8fde-d4fb897c69b5
+2025-04-15 08:15:46,652 - INFO - app - Processing job: 59adde2b-a625-41a5-8fde-d4fb897c69b5
+2025-04-15 08:15:46,653 - INFO - app - Job 59adde2b-a625-41a5-8fde-d4fb897c69b5: start location: (41.79543302499843, 12.605961465214733), end location: None, radius: None, polygon: [{'longitude': 12.604949595701669, 'latitude': 41.79503196191882}, {'longitude': 12.608100480515304, 'latitude': 41.79209075598638}, {'longitude': 12.609406944950479, 'latitude': 41.79281652064188}, {'longitude': 12.605910231315647, 'latitude': 41.795671751830554}, {'longitude': 12.604949595701669, 'latitude': 41.79503196191882}], middle points: []
+2025-04-15 08:15:46,653 - INFO - utils.route_planner_class - Network type: DRIVE
+2025-04-15 08:15:46,653 - INFO - utils.route_planner_class - Truncate by edge: False
+2025-04-15 08:15:46,653 - INFO - utils.route_planner_class - Simplify: True
+2025-04-15 08:15:46,654 - INFO - utils.route_planner_class - Retain: False
+2025-04-15 08:15:47,375 - INFO - utils.route_planner_class - Computing routes from start node within the polygon...
+2025-04-15 08:15:47,383 - INFO - utils.route_planner_class - Found 15 unique routes
+2025-04-15 08:15:47,384 - INFO - app - Job 59adde2b-a625-41a5-8fde-d4fb897c69b5: processed 15 routes
+2025-04-15 08:15:47,404 - INFO - app - Job 59adde2b-a625-41a5-8fde-d4fb897c69b5 completed successfully
+2025-04-15 08:16:04,650 - INFO - app - Started job 0142c8ee-12d2-47cc-b162-f2d323419e3f
+2025-04-15 08:16:04,651 - INFO - app - Processing job: 0142c8ee-12d2-47cc-b162-f2d323419e3f
+2025-04-15 08:16:04,651 - INFO - app - Job 0142c8ee-12d2-47cc-b162-f2d323419e3f: start location: (41.795442574089094, 12.605923039790923), end location: None, radius: None, polygon: [{'longitude': 12.604395550761831, 'latitude': 41.79168726996741}, {'longitude': 12.610755115330823, 'latitude': 41.79168726996741}, {'longitude': 12.610755115330823, 'latitude': 41.79642861230192}, {'longitude': 12.604395550761831, 'latitude': 41.79642861230192}, {'longitude': 12.604395550761831, 'latitude': 41.79168726996741}], middle points: []
+2025-04-15 08:16:04,652 - INFO - utils.route_planner_class - Network type: DRIVE
+2025-04-15 08:16:04,652 - INFO - utils.route_planner_class - Truncate by edge: False
+2025-04-15 08:16:04,652 - INFO - utils.route_planner_class - Simplify: True
+2025-04-15 08:16:04,652 - INFO - utils.route_planner_class - Retain: False
+2025-04-15 08:16:05,579 - INFO - utils.route_planner_class - Computing routes from start node within the polygon...
+2025-04-15 08:16:05,619 - INFO - utils.route_planner_class - Found 145 unique routes
+2025-04-15 08:16:05,629 - INFO - app - Job 0142c8ee-12d2-47cc-b162-f2d323419e3f: processed 145 routes
+2025-04-15 08:16:05,826 - INFO - app - Job 0142c8ee-12d2-47cc-b162-f2d323419e3f completed successfully
+2025-04-15 08:17:37,059 - INFO - utils.route_planner_class - Flask application started, logging initialized!
+2025-04-15 08:17:37,059 - INFO - app - Flask application started, logging initialized!
+2025-04-15 08:17:37,059 - INFO - app - Attempting to connect to MongoDB...
+2025-04-15 08:17:37,064 - INFO - app - Connected to MongoDB successfully.
+2025-04-15 08:17:37,086 - INFO - app - Started job c477bd53-5db1-4eb7-8998-bd6507577e88
+2025-04-15 08:17:37,087 - INFO - app - Processing job: c477bd53-5db1-4eb7-8998-bd6507577e88
+2025-04-15 08:17:37,088 - INFO - app - Job c477bd53-5db1-4eb7-8998-bd6507577e88: start location: (41.795442574089094, 12.605948656740452), end location: None, radius: None, polygon: [{'longitude': 12.604485213829818, 'latitude': 41.791696820313945}, {'longitude': 12.610691069213331, 'latitude': 41.791696820313945}, {'longitude': 12.610691069213331, 'latitude': 41.79632356896181}, {'longitude': 12.604485213829818, 'latitude': 41.79632356896181}, {'longitude': 12.604485213829818, 'latitude': 41.791696820313945}], middle points: []
+2025-04-15 08:17:37,089 - INFO - utils.route_planner_class - Network type: DRIVE
+2025-04-15 08:17:37,089 - INFO - utils.route_planner_class - Truncate by edge: True
+2025-04-15 08:17:37,089 - INFO - utils.route_planner_class - Simplify: True
+2025-04-15 08:17:37,089 - INFO - utils.route_planner_class - Retain: False
+2025-04-15 08:17:37,775 - INFO - utils.route_planner_class - Computing routes from start node within the polygon...
+2025-04-15 08:17:37,991 - INFO - utils.route_planner_class - Found 1429 unique routes
+2025-04-15 08:17:38,157 - INFO - app - Job c477bd53-5db1-4eb7-8998-bd6507577e88: processed 1429 routes
+2025-04-15 08:17:40,132 - INFO - app - Job c477bd53-5db1-4eb7-8998-bd6507577e88 completed successfully
+2025-04-15 08:17:42,679 - INFO - app - Started job 3ab8995c-6660-4800-a690-fc044170f87a
+2025-04-15 08:17:42,680 - INFO - app - Processing job: 3ab8995c-6660-4800-a690-fc044170f87a
+2025-04-15 08:17:42,681 - INFO - app - Job 3ab8995c-6660-4800-a690-fc044170f87a: start location: (41.79543302499843, 12.60597427369001), end location: None, radius: None, polygon: [{'longitude': 12.604632517622523, 'latitude': 41.79181619197889}, {'longitude': 12.610569382371178, 'latitude': 41.79181619197889}, {'longitude': 12.610569382371178, 'latitude': 41.79624239450313}, {'longitude': 12.604632517622523, 'latitude': 41.79624239450313}, {'longitude': 12.604632517622523, 'latitude': 41.79181619197889}], middle points: []
+2025-04-15 08:17:42,681 - INFO - utils.route_planner_class - Network type: DRIVE
+2025-04-15 08:17:42,681 - INFO - utils.route_planner_class - Truncate by edge: True
+2025-04-15 08:17:42,682 - INFO - utils.route_planner_class - Simplify: True
+2025-04-15 08:17:42,682 - INFO - utils.route_planner_class - Retain: False
+2025-04-15 08:17:43,572 - INFO - utils.route_planner_class - Computing routes from start node within the polygon...
+2025-04-15 08:17:43,784 - INFO - utils.route_planner_class - Found 1429 unique routes
+2025-04-15 08:17:43,971 - INFO - app - Job 3ab8995c-6660-4800-a690-fc044170f87a: processed 1429 routes
+2025-04-15 08:17:46,042 - INFO - app - Job 3ab8995c-6660-4800-a690-fc044170f87a completed successfully
+2025-04-15 08:18:32,662 - INFO - utils.route_planner_class - Flask application started, logging initialized!
+2025-04-15 08:18:32,663 - INFO - app - Flask application started, logging initialized!
+2025-04-15 08:18:32,663 - INFO - app - Attempting to connect to MongoDB...
+2025-04-15 08:18:32,667 - INFO - app - Connected to MongoDB successfully.
+2025-04-15 08:18:32,682 - INFO - app - Started job d0a3e359-140f-4069-9ee4-efc601dac3cc
+2025-04-15 08:18:32,683 - INFO - app - Processing job: d0a3e359-140f-4069-9ee4-efc601dac3cc
+2025-04-15 08:18:32,683 - INFO - app - Job d0a3e359-140f-4069-9ee4-efc601dac3cc: start location: (41.794067490430194, 12.60754971609677), end location: None, radius: 255, polygon: None, middle points: []
+2025-04-15 08:18:32,684 - INFO - utils.route_planner_class - Fetching graph for location (41.794067490430194, 12.60754971609677) with radius 0.26 km
+2025-04-15 08:18:32,684 - INFO - utils.route_planner_class - Network type: DRIVE
+2025-04-15 08:18:32,684 - INFO - utils.route_planner_class - Truncate by edge: True, <class 'bool'>
+2025-04-15 08:18:32,684 - INFO - utils.route_planner_class - Simplify: False
+2025-04-15 08:18:32,684 - INFO - utils.route_planner_class - Retain: False
+2025-04-15 08:18:33,386 - INFO - utils.route_planner_class - Graph fetched: 39 nodes, 83 edges
+2025-04-15 08:18:33,389 - INFO - utils.route_planner_class - Computing routes from start node...
+2025-04-15 08:18:33,602 - INFO - utils.route_planner_class - Found 1456 unique routes
+2025-04-15 08:18:33,765 - INFO - app - Job d0a3e359-140f-4069-9ee4-efc601dac3cc: processed 1456 routes
+2025-04-15 08:18:35,877 - INFO - app - Job d0a3e359-140f-4069-9ee4-efc601dac3cc completed successfully
+2025-04-15 08:19:06,411 - INFO - utils.route_planner_class - Flask application started, logging initialized!
+2025-04-15 08:19:06,411 - INFO - app - Flask application started, logging initialized!
+2025-04-15 08:19:06,411 - INFO - app - Attempting to connect to MongoDB...
+2025-04-15 08:19:06,415 - INFO - app - Connected to MongoDB successfully.
+2025-04-15 08:19:06,429 - INFO - app - Started job aab9dc24-fe7d-4110-b69d-da8fab2f7699
+2025-04-15 08:19:06,429 - INFO - app - Processing job: aab9dc24-fe7d-4110-b69d-da8fab2f7699
+2025-04-15 08:19:06,430 - INFO - app - Job aab9dc24-fe7d-4110-b69d-da8fab2f7699: start location: (41.79404839183843, 12.607575333046327), end location: None, radius: 249, polygon: None, middle points: []
+2025-04-15 08:19:06,430 - INFO - utils.route_planner_class - Fetching graph for location (41.79404839183843, 12.607575333046327) with radius 0.25 km
+2025-04-15 08:19:06,430 - INFO - utils.route_planner_class - Network type: DRIVE
+2025-04-15 08:19:06,430 - INFO - utils.route_planner_class - Truncate by edge: False, <class 'bool'>
+2025-04-15 08:19:06,430 - INFO - utils.route_planner_class - Simplify: False
+2025-04-15 08:19:06,431 - INFO - utils.route_planner_class - Retain: False
+2025-04-15 08:19:07,277 - INFO - utils.route_planner_class - Graph fetched: 39 nodes, 83 edges
+2025-04-15 08:19:07,282 - INFO - utils.route_planner_class - Computing routes from start node...
+2025-04-15 08:19:07,606 - INFO - utils.route_planner_class - Found 1456 unique routes
+2025-04-15 08:19:07,889 - INFO - app - Job aab9dc24-fe7d-4110-b69d-da8fab2f7699: processed 1456 routes
+2025-04-15 08:19:09,874 - INFO - app - Job aab9dc24-fe7d-4110-b69d-da8fab2f7699 completed successfully
+2025-04-15 08:20:06,697 - INFO - utils.route_planner_class - Flask application started, logging initialized!
+2025-04-15 08:20:06,697 - INFO - app - Flask application started, logging initialized!
+2025-04-15 08:20:06,697 - INFO - app - Attempting to connect to MongoDB...
+2025-04-15 08:20:06,702 - INFO - app - Connected to MongoDB successfully.
+2025-04-15 08:20:06,715 - INFO - app - Started job e6dba2ef-85bd-4c5e-8c2a-ce9863e1b01e
+2025-04-15 08:20:06,716 - INFO - app - Processing job: e6dba2ef-85bd-4c5e-8c2a-ce9863e1b01e
+2025-04-15 08:20:06,717 - INFO - app - Job e6dba2ef-85bd-4c5e-8c2a-ce9863e1b01e: start location: (41.79464044553967, 12.606858058454407), end location: None, radius: 198, polygon: None, middle points: []
+2025-04-15 08:20:06,717 - INFO - utils.route_planner_class - Fetching graph for location (41.79464044553967, 12.606858058454407) with radius 0.20 km
+2025-04-15 08:20:06,717 - INFO - utils.route_planner_class - Network type: DRIVE
+2025-04-15 08:20:06,717 - INFO - utils.route_planner_class - Truncate by edge: False
+2025-04-15 08:20:06,717 - INFO - utils.route_planner_class - Simplify: False
+2025-04-15 08:20:06,717 - INFO - utils.route_planner_class - Retain: False
+2025-04-15 08:20:07,492 - INFO - utils.route_planner_class - Graph fetched: 20 nodes, 44 edges
+2025-04-15 08:20:07,496 - INFO - utils.route_planner_class - Computing routes from start node...
+2025-04-15 08:20:07,525 - INFO - utils.route_planner_class - Found 156 unique routes
+2025-04-15 08:20:07,537 - INFO - app - Job e6dba2ef-85bd-4c5e-8c2a-ce9863e1b01e: processed 156 routes
+2025-04-15 08:20:07,719 - INFO - app - Job e6dba2ef-85bd-4c5e-8c2a-ce9863e1b01e completed successfully
+2025-04-15 08:20:46,940 - INFO - utils.route_planner_class - Flask application started, logging initialized!
+2025-04-15 08:20:46,940 - INFO - app - Flask application started, logging initialized!
+2025-04-15 08:20:46,940 - INFO - app - Attempting to connect to MongoDB...
+2025-04-15 08:20:46,945 - INFO - app - Connected to MongoDB successfully.
+2025-04-15 08:20:46,958 - INFO - app - Started job 781099eb-538a-43b0-82fe-6296d74d6cc2
+2025-04-15 08:20:46,959 - INFO - app - Processing job: 781099eb-538a-43b0-82fe-6296d74d6cc2
+2025-04-15 08:20:46,960 - INFO - app - Job 781099eb-538a-43b0-82fe-6296d74d6cc2: start location: (41.79463089633023, 12.606870866929654), end location: None, radius: 199, polygon: None, middle points: []
+2025-04-15 08:20:46,960 - INFO - utils.route_planner_class - Fetching graph for location (41.79463089633023, 12.606870866929654) with radius 0.20 km
+2025-04-15 08:20:46,960 - INFO - utils.route_planner_class - Network type: DRIVE
+2025-04-15 08:20:46,960 - INFO - utils.route_planner_class - Truncate by edge: True
+2025-04-15 08:20:46,960 - INFO - utils.route_planner_class - Simplify: True
+2025-04-15 08:20:46,961 - INFO - utils.route_planner_class - Retain: False
+2025-04-15 08:20:48,202 - INFO - utils.route_planner_class - Graph fetched: 20 nodes, 44 edges
+2025-04-15 08:20:48,205 - INFO - utils.route_planner_class - Computing routes from start node...
+2025-04-15 08:20:48,236 - INFO - utils.route_planner_class - Found 156 unique routes
+2025-04-15 08:20:48,245 - INFO - app - Job 781099eb-538a-43b0-82fe-6296d74d6cc2: processed 156 routes
+2025-04-15 08:20:48,420 - INFO - app - Job 781099eb-538a-43b0-82fe-6296d74d6cc2 completed successfully
+2025-04-15 08:22:25,626 - INFO - utils.route_planner_class - Flask application started, logging initialized!
+2025-04-15 08:22:25,626 - INFO - app - Flask application started, logging initialized!
+2025-04-15 08:22:25,626 - INFO - app - Attempting to connect to MongoDB...
+2025-04-15 08:22:25,630 - INFO - app - Connected to MongoDB successfully.
+2025-04-15 08:22:25,645 - INFO - app - Started job 5974a984-4a35-4639-bc0e-12ebbc66961e
+2025-04-15 08:22:25,645 - INFO - app - Processing job: 5974a984-4a35-4639-bc0e-12ebbc66961e
+2025-04-15 08:22:25,646 - INFO - app - Job 5974a984-4a35-4639-bc0e-12ebbc66961e: start location: (41.794621347118635, 12.60692210082874), end location: None, radius: 200, polygon: None, middle points: []
+2025-04-15 08:22:25,646 - INFO - utils.route_planner_class - Fetching graph for location (41.794621347118635, 12.60692210082874) with radius 0.20 km
+2025-04-15 08:22:25,647 - INFO - utils.route_planner_class - Network type: DRIVE
+2025-04-15 08:22:25,647 - INFO - utils.route_planner_class - Truncate by edge: True
+2025-04-15 08:22:25,647 - INFO - utils.route_planner_class - Simplify: True
+2025-04-15 08:22:25,647 - INFO - utils.route_planner_class - Retain: False
+2025-04-15 08:22:26,532 - INFO - utils.route_planner_class - Graph fetched: 20 nodes, 44 edges
+2025-04-15 08:22:26,535 - INFO - utils.route_planner_class - Computing routes from start node...
+2025-04-15 08:22:26,580 - INFO - utils.route_planner_class - Found 156 unique routes
+2025-04-15 08:22:26,604 - INFO - app - Job 5974a984-4a35-4639-bc0e-12ebbc66961e: processed 156 routes
+2025-04-15 08:22:26,817 - INFO - app - Job 5974a984-4a35-4639-bc0e-12ebbc66961e completed successfully
+2025-04-15 08:23:54,757 - INFO - utils.route_planner_class - Flask application started, logging initialized!
+2025-04-15 08:23:54,757 - INFO - app - Flask application started, logging initialized!
+2025-04-15 08:23:54,757 - INFO - app - Attempting to connect to MongoDB...
+2025-04-15 08:23:54,762 - INFO - app - Connected to MongoDB successfully.
+2025-04-15 08:23:54,776 - INFO - app - Started job 67183af8-a269-4f6a-8321-72da4c1eebeb
+2025-04-15 08:23:54,777 - INFO - app - Processing job: 67183af8-a269-4f6a-8321-72da4c1eebeb
+2025-04-15 08:23:54,778 - INFO - app - Job 67183af8-a269-4f6a-8321-72da4c1eebeb: start location: (41.79464999474837, 12.606883675404902), end location: None, radius: 195, polygon: None, middle points: []
+2025-04-15 08:23:54,778 - INFO - utils.route_planner_class - Fetching graph for location (41.79464999474837, 12.606883675404902) with radius 0.20 km
+2025-04-15 08:23:54,778 - INFO - utils.route_planner_class - Network type: DRIVE
+2025-04-15 08:23:54,778 - INFO - utils.route_planner_class - Truncate by edge: False
+2025-04-15 08:23:54,778 - INFO - utils.route_planner_class - Simplify: True
+2025-04-15 08:23:54,778 - INFO - utils.route_planner_class - Retain: False
+2025-04-15 08:23:55,628 - INFO - utils.route_planner_class - Graph fetched: 20 nodes, 44 edges
+2025-04-15 08:23:55,633 - INFO - utils.route_planner_class - Computing routes from start node...
+2025-04-15 08:23:55,660 - INFO - utils.route_planner_class - Found 156 unique routes
+2025-04-15 08:23:55,670 - INFO - app - Job 67183af8-a269-4f6a-8321-72da4c1eebeb: processed 156 routes
+2025-04-15 08:23:55,830 - INFO - app - Job 67183af8-a269-4f6a-8321-72da4c1eebeb completed successfully
+2025-04-15 08:24:54,467 - INFO - utils.route_planner_class - Flask application started, logging initialized!
+2025-04-15 08:24:54,467 - INFO - app - Flask application started, logging initialized!
+2025-04-15 08:24:54,467 - INFO - app - Attempting to connect to MongoDB...
+2025-04-15 08:24:54,472 - INFO - app - Connected to MongoDB successfully.
+2025-04-15 08:24:54,497 - INFO - app - Started job cecf059e-3430-4727-8c69-6560a2864e0a
+2025-04-15 08:24:54,498 - INFO - app - Processing job: cecf059e-3430-4727-8c69-6560a2864e0a
+2025-04-15 08:24:54,500 - INFO - app - Job cecf059e-3430-4727-8c69-6560a2864e0a: start location: (41.79464999474837, 12.606883675404902), end location: None, radius: 195, polygon: None, middle points: []
+2025-04-15 08:24:54,500 - INFO - utils.route_planner_class - Fetching graph for location (41.79464999474837, 12.606883675404902) with radius 0.20 km
+2025-04-15 08:24:54,500 - INFO - utils.route_planner_class - Network type: DRIVE
+2025-04-15 08:24:54,500 - INFO - utils.route_planner_class - Truncate by edge: False
+2025-04-15 08:24:54,500 - INFO - utils.route_planner_class - Simplify: True
+2025-04-15 08:24:54,500 - INFO - utils.route_planner_class - Retain: False
+2025-04-15 08:24:55,429 - INFO - utils.route_planner_class - Graph fetched: 20 nodes, 44 edges
+2025-04-15 08:24:55,432 - INFO - utils.route_planner_class - Computing routes from start node...
+2025-04-15 08:24:55,469 - INFO - utils.route_planner_class - Found 156 unique routes
+2025-04-15 08:24:55,483 - INFO - app - Job cecf059e-3430-4727-8c69-6560a2864e0a: processed 156 routes
+2025-04-15 08:24:55,680 - INFO - app - Job cecf059e-3430-4727-8c69-6560a2864e0a completed successfully
+2025-04-15 08:25:34,617 - INFO - utils.route_planner_class - Flask application started, logging initialized!
+2025-04-15 08:25:34,617 - INFO - app - Flask application started, logging initialized!
+2025-04-15 08:25:34,617 - INFO - app - Attempting to connect to MongoDB...
+2025-04-15 08:25:34,621 - INFO - app - Connected to MongoDB successfully.
+2025-04-15 08:25:34,634 - INFO - app - Started job 80e7adb7-c82c-42cc-9c0e-77f4b3926765
+2025-04-15 08:25:34,635 - INFO - app - Processing job: 80e7adb7-c82c-42cc-9c0e-77f4b3926765
+2025-04-15 08:25:34,636 - INFO - app - Job 80e7adb7-c82c-42cc-9c0e-77f4b3926765: start location: (41.79463089633023, 12.606883675404902), end location: None, radius: 197, polygon: None, middle points: []
+2025-04-15 08:25:34,636 - INFO - utils.route_planner_class - Fetching graph for location (41.79463089633023, 12.606883675404902) with radius 0.20 km
+2025-04-15 08:25:34,636 - INFO - utils.route_planner_class - Network type: DRIVE
+2025-04-15 08:25:34,636 - INFO - utils.route_planner_class - Truncate by edge: False
+2025-04-15 08:25:34,637 - INFO - utils.route_planner_class - Simplify: True
+2025-04-15 08:25:34,637 - INFO - utils.route_planner_class - Retain: False
+2025-04-15 08:25:35,636 - INFO - utils.route_planner_class - Graph fetched: 20 nodes, 44 edges
+2025-04-15 08:25:35,639 - INFO - utils.route_planner_class - Computing routes from start node...
+2025-04-15 08:25:35,664 - INFO - utils.route_planner_class - Found 156 unique routes
+2025-04-15 08:25:35,674 - INFO - app - Job 80e7adb7-c82c-42cc-9c0e-77f4b3926765: processed 156 routes
+2025-04-15 08:25:35,828 - INFO - app - Job 80e7adb7-c82c-42cc-9c0e-77f4b3926765 completed successfully
+2025-04-15 08:26:18,050 - INFO - utils.route_planner_class - Flask application started, logging initialized!
+2025-04-15 08:26:18,050 - INFO - app - Flask application started, logging initialized!
+2025-04-15 08:26:18,050 - INFO - app - Attempting to connect to MongoDB...
+2025-04-15 08:26:18,055 - INFO - app - Connected to MongoDB successfully.
+2025-04-15 08:26:18,068 - INFO - app - Started job 5137c831-7d8d-42b4-82ac-86b9ea94787c
+2025-04-15 08:26:18,069 - INFO - app - Processing job: 5137c831-7d8d-42b4-82ac-86b9ea94787c
+2025-04-15 08:26:18,070 - INFO - app - Job 5137c831-7d8d-42b4-82ac-86b9ea94787c: start location: (41.79464044553967, 12.606858058454407), end location: None, radius: 200, polygon: None, middle points: []
+2025-04-15 08:26:18,070 - INFO - utils.route_planner_class - Fetching graph for location (41.79464044553967, 12.606858058454407) with radius 0.20 km
+2025-04-15 08:26:18,070 - INFO - utils.route_planner_class - Network type: DRIVE
+2025-04-15 08:26:18,070 - INFO - utils.route_planner_class - Truncate by edge: False
+2025-04-15 08:26:18,070 - INFO - utils.route_planner_class - Simplify: True
+2025-04-15 08:26:18,070 - INFO - utils.route_planner_class - Retain: False
+2025-04-15 08:26:19,014 - INFO - utils.route_planner_class - Graph fetched: 13 nodes, 24 edges
+2025-04-15 08:26:19,017 - INFO - utils.route_planner_class - Computing routes from start node...
+2025-04-15 08:26:19,029 - INFO - utils.route_planner_class - Found 17 unique routes
+2025-04-15 08:26:19,030 - INFO - app - Job 5137c831-7d8d-42b4-82ac-86b9ea94787c: processed 17 routes
+2025-04-15 08:26:19,041 - INFO - app - Job 5137c831-7d8d-42b4-82ac-86b9ea94787c completed successfully

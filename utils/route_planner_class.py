@@ -87,17 +87,17 @@ class RoutePlanner:
         logger.info("Fetching graph for location %s with radius %.2f km", self.start_location, self.radius_km)
 
         logger.info("Network type: %s", self.network_type)
-        logger.info(f"Truncate by edge: {Config.TRUNCATE_EDGE}, {type(bool(Config.TRUNCATE_EDGE))}")
-        logger.info(f"Simplify: {Config.SIMPLIFY}, {bool(type(Config.SIMPLIFY))}")
-        logger.info(f"Retain: {Config.RETAIN}, {bool(type(Config.RETAIN))}")
+        logger.info(f"Truncate by edge: {TRUNCATE_EDGE}")
+        logger.info(f"Simplify: {SIMPLIFY}")
+        logger.info(f"Retain: {RETAIN}")
         try:
             graph = ox.graph_from_point(
                 self.start_location,
                 dist=self.radius_km * 1000,
                 network_type=self.network_type.lower(), 
-                simplify = False,
-                truncate_by_edge = bool(Config.TRUNCATE_EDGE), 
-                retain_all = bool(Config.RETAIN)
+                simplify = True,
+                truncate_by_edge = False, 
+                retain_all = False
             )
             if not graph:
                 raise ValueError("Graph fetch returned None.")
@@ -114,16 +114,16 @@ class RoutePlanner:
         Fetch a road network graph for the provided polygon.
         """
         logger.info("Network type: %s", self.network_type)
-        logger.info(f"Truncate by edge: {Config.TRUNCATE_EDGE}, {type(bool(Config.TRUNCATE_EDGE))}")
-        logger.info(f"Simplify: {Config.SIMPLIFY}, {bool(type(Config.SIMPLIFY))}")
-        logger.info(f"Retain: {Config.RETAIN}, {bool(type(Config.RETAIN))}")
+        logger.info(f"Truncate by edge: {Config.TRUNCATE_EDGE}")
+        logger.info(f"Simplify: {Config.SIMPLIFY}")
+        logger.info(f"Retain: {Config.RETAIN}")
         try:
             self.graph = ox.graph_from_polygon(
                 polygon,
-                network_type = self.network_type.lower(),
-                simplify = False, 
-                truncate_by_edge = bool(Config.TRUNCATE_EDGE),
-	            retain_all = bool(Config.RETAIN)
+                network_type=self.network_type.lower(),
+                simplify=bool(Config.SIMPLIFY), 
+                truncate_by_edge= bool(Config.TRUNCATE_EDGE),
+                retain_all=bool(Config.RETAIN)
             )
 
             if not self.graph:
@@ -312,10 +312,29 @@ class RoutePlanner:
 
         route_polylines = []
         for idx, route in enumerate(self.unique_routes):
-            path_coords = [(self.graph.nodes[node]['y'], self.graph.nodes[node]['x']) for node in route]
+            path_coords = []
+            for u, v in zip(route[:-1], route[1:]):
+                # Get edge data including geometry
+                edge_data = self.graph.get_edge_data(u, v)
+                if edge_data and 'geometry' in edge_data[0]:
+                    # Extract all points from the LineString geometry
+                    points = list(edge_data[0]['geometry'].coords)
+                    # Convert to (lat, lon) format and extend path
+                    path_coords.extend([(y, x) for x, y in points])
+                else:
+                    # Fallback to node coordinates if no geometry
+                    path_coords.append((self.graph.nodes[u]['y'], self.graph.nodes[u]['x']))
+                    path_coords.append((self.graph.nodes[v]['y'], self.graph.nodes[v]['x']))
+            
+            # Remove duplicate consecutive points
+            cleaned_coords = [path_coords[0]]
+            for coord in path_coords[1:]:
+                if coord != cleaned_coords[-1]:
+                    cleaned_coords.append(coord)
+            
             route_polylines.append({
                 "route_id": idx + 1,
-                "polyline": path_coords
+                "polyline": cleaned_coords
             })
 
         return route_polylines

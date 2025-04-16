@@ -15,6 +15,8 @@ import shutil
 from utils.config import Config
 from utils.route_planner_class import RoutePlanner
 import os
+from utils.stats import log_all_route_stats
+
 
 # Simplify the logging setup
 logger = logging.getLogger(__name__)
@@ -154,6 +156,8 @@ async def process_job(job_id, data, network_type):
         
         routes = planner.filter_routes_by_point(middle_points) if middle_points else planner.get_route_polylines()
         logger.info("Job %s: processed %d routes", job_id, len(routes))
+
+        log_all_route_stats(planner)
         
         for idx, route in enumerate(routes):
             routes_collection.insert_one({

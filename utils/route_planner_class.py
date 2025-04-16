@@ -87,9 +87,6 @@ class RoutePlanner:
         logger.info("Fetching graph for location %s with radius %.2f km", self.start_location, self.radius_km)
 
         logger.info("Network type: %s", self.network_type)
-        logger.info(f"Truncate by edge: {TRUNCATE_EDGE}")
-        logger.info(f"Simplify: {SIMPLIFY}")
-        logger.info(f"Retain: {RETAIN}")
         try:
             graph = ox.graph_from_point(
                 self.start_location,
@@ -114,9 +111,6 @@ class RoutePlanner:
         Fetch a road network graph for the provided polygon.
         """
         logger.info("Network type: %s", self.network_type)
-        logger.info(f"Truncate by edge: {Config.TRUNCATE_EDGE}")
-        logger.info(f"Simplify: {Config.SIMPLIFY}")
-        logger.info(f"Retain: {Config.RETAIN}")
         try:
             self.graph = ox.graph_from_polygon(
                 polygon,

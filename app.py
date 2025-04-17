@@ -103,7 +103,7 @@ def schedule_job(job_id, data):
         logger.error("Error processing job %s: %s", job_id, str(e))
         jobs_collection.update_one(
             {"id": Binary(uuid.UUID(job_id).bytes, UUID_SUBTYPE)},
-            {"$set": {"returnCode": -1, "error": str(e), "timeEnd": datetime.now(timezone.utc)}}
+            {"$set": {"returnCode": 9, "error": str(e), "timeEnd": datetime.now(timezone.utc)}}
         )
 
 async def process_job(job_id, data, network_type):

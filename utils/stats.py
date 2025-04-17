@@ -1,188 +1,122 @@
-#!/usr/bin/env python
-
 import math
-import sys
-import os
-import logging
 from geopy.distance import geodesic
-import networkx as nx
-import osmnx as ox
-import statistics
-from utils.config import Config
 
-# Setup logging
-logger = logging.getLogger(__name__)
-logger.setLevel(logging.DEBUG)
 
-file_handler = logging.FileHandler(Config.LOG_FILE)
-file_handler.setLevel(logging.DEBUG)
-file_formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(name)s - %(message)s')
-file_handler.setFormatter(file_formatter)
-logger.addHandler(file_handler)
-
-console_handler = logging.StreamHandler(sys.stdout)
-console_handler.setLevel(logging.DEBUG)
-console_handler.setFormatter(file_formatter)
-console_handler.flush = sys.stdout.flush
-logger.addHandler(console_handler)
-
-logger.info("Stats module loaded, logging initialized!")
-
-# Ensure cache directory exists
-os.makedirs(Config.CUSTOM_CACHE_DIR, exist_ok=True)
-ox.settings.cache_folder = Config.CUSTOM_CACHE_DIR
-ox.settings.use_cache = False
-ox.settings.cache_only_mode = False
-
-# ------------------------ FUNZIONI PER STATISTICHE INDIVIDUALI ------------------------
-
-def compute_route_distance(route, route_planner):
+def compute_route_distance(route, graph):
     """
-    Calcola la distanza totale della rotta e restituisce anche una lista con la distanza di ogni segmento.
-    Ritorna: total_distance, segment_distances list.
+    Calculate the total distance of a route.
+
+    Returns:
+        dict with:
+            - total_distance (float): total distance in meters
     """
     total_distance = 0.0
-    segment_distances = []
-    for i in range(len(route) - 1):
-        u, v = route[i], route[i + 1]
-        edge_data = route_planner.graph.get_edge_data(u, v)
-        segment_length = None
 
+    for u, v in zip(route, route[1:]):
+        edge_data = graph.get_edge_data(u, v)
+        length = None
         if edge_data:
-            # Per i MultiGraphs, edge_data è un dizionario: prendi il primo elemento disponibile.
             data = list(edge_data.values())[0]
-            if 'length' in data:
-                segment_length = data['length']
+            length = data.get('length')
 
-        if segment_length is None:
-            node_u = route_planner.graph.nodes[u]
-            node_v = route_planner.graph.nodes[v]
-            coord_u = (node_u['y'], node_u['x'])
-            coord_v = (node_v['y'], node_v['x'])
-            segment_length = geodesic(coord_u, coord_v).meters
+        if length is None:
+            coord_u = (graph.nodes[u]['y'], graph.nodes[u]['x'])
+            coord_v = (graph.nodes[v]['y'], graph.nodes[v]['x'])
+            length = geodesic(coord_u, coord_v).meters
 
-        segment_distances.append(segment_length)
-        total_distance += segment_length
+        total_distance += length
 
-    return total_distance, segment_distances
+    return {"total_distance": total_distance}
 
-def log_total_distance(route, route_planner):
+
+def compute_road_types(route, graph):
     """
-    Logga la distanza totale della rotta e restituisce il valore.
-    """
-    total_distance, _ = compute_route_distance(route, route_planner)
-    logger.info("Total distance: %.2f meters", total_distance)
-    return total_distance
+    Count the occurrences of each highway type along the route.
 
-def log_road_types(route, route_planner):
-    """
-    Logga le tipologie di strade (highways) presenti lungo la rotta.
+    Returns:
+        dict: keys are highway types, values are counts
     """
     highway_counts = {}
-    for i in range(len(route) - 1):
-        u, v = route[i], route[i + 1]
-        edge_data = route_planner.graph.get_edge_data(u, v)
-        if edge_data:
-            data = list(edge_data.values())[0]
-            highway = data.get('highway', 'undefined')
-            if isinstance(highway, list):
-                highway = highway[0]
-            highway_counts[highway] = highway_counts.get(highway, 0) + 1
-    logger.info("Road types along the route: %s", highway_counts)
+    for u, v in zip(route, route[1:]):
+        edge_data = graph.get_edge_data(u, v)
+        if not edge_data:
+            continue
+        data = list(edge_data.values())[0]
+        highway = data.get('highway', 'undefined')
+        if isinstance(highway, list):
+            highway = highway[0]
+        highway_counts[highway] = highway_counts.get(highway, 0) + 1
+    return highway_counts
 
-def log_turn_stats(route, route_planner):
+
+def compute_turn_count(route, graph, angle_threshold=30):
     """
-    Rileva e logga il numero di svolte e l'angolo medio delle svolte lungo la rotta.
-    Una svolta viene considerata se l'angolo calcolato supera i 30°.
+    Count turns along the route based on an angle threshold.
+
+    Returns:
+        dict with:
+            - turn_count (int)
     """
-    turns = 0
-    turn_angles = []
-    
     def angle_between(p, q, r):
         v1 = (p[0] - q[0], p[1] - q[1])
         v2 = (r[0] - q[0], r[1] - q[1])
-        angle1 = math.atan2(v1[1], v1[0])
-        angle2 = math.atan2(v2[1], v2[0])
-        angle = math.degrees(angle2 - angle1)
-        angle = (angle + 360) % 360
-        if angle > 180:
-            angle = 360 - angle
-        return angle
+        ang1 = math.atan2(v1[1], v1[0])
+        ang2 = math.atan2(v2[1], v2[0])
+        ang = abs(math.degrees(ang2 - ang1))
+        return ang if ang <= 180 else 360 - ang
 
-    for i in range(1, len(route) - 1):
-        prev_node = route_planner.graph.nodes[route[i - 1]]
-        curr_node = route_planner.graph.nodes[route[i]]
-        next_node = route_planner.graph.nodes[route[i + 1]]
-        p = (prev_node['y'], prev_node['x'])
-        q = (curr_node['y'], curr_node['x'])
-        r = (next_node['y'], next_node['x'])
-        a = angle_between(p, q, r)
-        if a > 30:
+    turns = 0
+    for prev_id, curr_id, next_id in zip(route, route[1:], route[2:]):
+        p = (graph.nodes[prev_id]['y'], graph.nodes[prev_id]['x'])
+        q = (graph.nodes[curr_id]['y'], graph.nodes[curr_id]['x'])
+        r = (graph.nodes[next_id]['y'], graph.nodes[next_id]['x'])
+        if angle_between(p, q, r) > angle_threshold:
             turns += 1
-            turn_angles.append(a)
-    
-    logger.info("Detected turns: %d", turns)
-    # Se vuoi loggare anche l'angolo medio, puoi decommentare la seguente riga:
-    # avg_turn = sum(turn_angles) / len(turn_angles) if turn_angles else 0
-    # logger.info("Average turn angle: %.2f degrees", avg_turn)
+    return {"turn_count": turns}
 
-# ------------------------ STATISTICHE AGGREGATE ------------------------
 
-def log_overall_routes_stats(route_planner):
+def get_route_statistics(route_planner):
     """
-    Calcola e logga le statistiche aggregate per tutte le rotte:
-      - Identifica la rotta più corta e la più lunga (in base alla distanza totale).
+    Compute minimal route statistics for each route and overall.
+
+    Returns:
+        tuple:
+            - individual_stats (list[dict]): each dict has total_distance, road_type, turn_count
+            - overall_stats (dict): aggregated stats including longest and shortest route info
     """
-    routes_stats = []
-    for idx, route in enumerate(route_planner.unique_routes):
-        total_distance, _ = compute_route_distance(route, route_planner)
-        routes_stats.append({
-            'route_number': idx + 1,
-            'route': route,
-            'distance': total_distance
+    graph = route_planner.graph
+    individual_stats = []
+
+    # Compute stats per route
+    for idx, route in enumerate(route_planner.unique_routes, start=1):
+        dist = compute_route_distance(route, graph)["total_distance"]
+        road_type = compute_road_types(route, graph)
+        turn_cnt = compute_turn_count(route, graph)["turn_count"]
+        individual_stats.append({
+            "route_id": idx,
+            "total_distance": dist,
+            "road_type": road_type,
+            "turn_count": turn_cnt
         })
-    
-    if not routes_stats:
-        logger.info("No routes available for overall statistics.")
-        return
 
-    avg_distance = sum(stat['distance'] for stat in routes_stats) / len(routes_stats)
-    
-    shortest_route = min(routes_stats, key=lambda x: x['distance'])
-    longest_route = max(routes_stats, key=lambda x: x['distance'])
+    # Compute overall statistics
+    overall_stats = {}
+    if individual_stats:
+        distances = [r["total_distance"] for r in individual_stats]
+        shortest_distance = min(distances)
+        longest_distance = max(distances)
+        shortest_id = next(r["route_id"] for r in individual_stats if r["total_distance"] == shortest_distance)
+        longest_id = next(r["route_id"] for r in individual_stats if r["total_distance"] == longest_distance)
 
-    logger.info("========== OVERALL ROUTE STATISTICS ==========")
-    logger.info("Number of routes: %d", len(routes_stats))
-    logger.info("Average route distance: %.2f meters", avg_distance)
-    logger.info("Shortest route: Route %d with %.2f meters", shortest_route['route_number'], shortest_route['distance'])
-    logger.info("Shortest route details (node sequence): %s", shortest_route['route'])
-    logger.info("Longest route: Route %d with %.2f meters", longest_route['route_number'], longest_route['distance'])
-    logger.info("Longest route details (node sequence): %s", longest_route['route'])
-    logger.info("========== END OVERALL ROUTE STATISTICS ==========")
+        overall_stats = {
+            "shortest_route": {
+                "route_id": shortest_id,
+                "distance": shortest_distance
+            },
+            "longest_route": {
+                "route_id": longest_id,
+                "distance": longest_distance
+            }
+        }
 
-# ------------------------ FUNZIONE PRINCIPALE ------------------------
-
-def log_all_route_stats(route_planner):
-    """
-    Chiama le funzioni per loggare solo le seguenti statistiche:
-      - Total distance (per ciascuna rotta)
-      - Road type (per ciascuna rotta)
-      - Detected turns (per ciascuna rotta)
-      - Overall: Shortest and Longest route con i dettagli specifici.
-    """
-    logger.info("========== BEGIN ROUTE STATISTICS ==========")
-    
-    # Logga le statistiche per ogni rotta.
-    for idx, route in enumerate(route_planner.unique_routes):
-        logger.info("========== ROUTE %d ==========", idx + 1)
-        total_distance = log_total_distance(route, route_planner)
-        log_road_types(route, route_planner)
-        log_turn_stats(route, route_planner)
-    
-    # Logga le statistiche aggregate per tutte le rotte.
-    log_overall_routes_stats(route_planner)
-    
-    logger.info("========== END ROUTE STATISTICS ==========")
-
-# ------------------------ END OF SCRIPT ------------------------
-
+    return individual_stats, overall_stats

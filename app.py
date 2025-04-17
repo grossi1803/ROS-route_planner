@@ -15,7 +15,7 @@ import shutil
 from utils.config import Config
 from utils.route_planner_class import RoutePlanner
 import os
-from utils.stats import log_all_route_stats
+from utils.stats import get_route_statistics
 
 
 # Simplify the logging setup
@@ -35,13 +35,11 @@ ox.settings.use_cache = False
 ox.settings.cache_only_mode = False
 
 # MongoDB Connection
-
 logger.info("Attempting to connect to MongoDB...")
 client = MongoClient(Config.MONGO_URI)
 db = client[Config.MONGO_DB]
 jobs_collection = db['job_status']
 routes_collection = db['result_routes']
-#routes_collection.create_index({"polyline": "2dsphere"})
 logger.info("Connected to MongoDB successfully.")
 
 executor = ThreadPoolExecutor(max_workers=4)
@@ -52,21 +50,18 @@ app = Flask(__name__)
 def start_job():
     try:
         data = request.get_json()
-        
         # Validate start coordinates
         if "start" not in data:
             return jsonify({"error": "Missing required field: start"}), 400
-            
         # Validate that either radius or polygon is provided
         if "radius" not in data and "polygon" not in data:
             return jsonify({"error": "Either radius or polygon must be provided"}), 400
-
         if "network_type" not in data:
             return jsonify({"error": "Missing required field: network_type"}), 400
 
         job_id1 = uuid.uuid4()
         job_id = str(job_id1)
-        current_time =  datetime.now(timezone.utc)
+        current_time = datetime.now(timezone.utc)
 
         job_document = {
             "id": Binary(job_id1.bytes, UUID_SUBTYPE),
@@ -95,15 +90,21 @@ def start_job():
 def schedule_job(job_id, data):
     logger.info("Processing job: %s", job_id)
     try:
-        network_type = data.get("network_type", Config.TYPE_OF_MAP) # Default to config if not provided
+        network_type = data.get("network_type", Config.TYPE_OF_MAP)
         loop = asyncio.new_event_loop()
         asyncio.set_event_loop(loop)
         loop.run_until_complete(process_job(job_id, data, network_type))
         logger.info("Job %s completed successfully", job_id)
-        jobs_collection.update_one({"id": Binary(uuid.UUID(job_id).bytes, UUID_SUBTYPE)}, {"$set": {"returnCode": 0, "timeEnd":  datetime.now(timezone.utc)}})
+        jobs_collection.update_one(
+            {"id": Binary(uuid.UUID(job_id).bytes, UUID_SUBTYPE)},
+            {"$set": {"returnCode": 0, "timeEnd": datetime.now(timezone.utc)}}
+        )
     except Exception as e:
         logger.error("Error processing job %s: %s", job_id, str(e))
-        jobs_collection.update_one({"id": Binary(uuid.UUID(job_id).bytes, UUID_SUBTYPE)}, {"$set": {"returnCode": -1, "error": str(e), "timeEnd":  datetime.now(timezone.utc)}})
+        jobs_collection.update_one(
+            {"id": Binary(uuid.UUID(job_id).bytes, UUID_SUBTYPE)},
+            {"$set": {"returnCode": -1, "error": str(e), "timeEnd": datetime.now(timezone.utc)}}
+        )
 
 async def process_job(job_id, data, network_type):
     try:
@@ -128,7 +129,6 @@ async def process_job(job_id, data, network_type):
                 {"$set": progress_data}
             )
         
-        # Fixed: Properly pass network_type as a keyword argument
         planner = RoutePlanner(
             start_location=start_location,
             start_name="Start",
@@ -157,14 +157,23 @@ async def process_job(job_id, data, network_type):
         routes = planner.filter_routes_by_point(middle_points) if middle_points else planner.get_route_polylines()
         logger.info("Job %s: processed %d routes", job_id, len(routes))
 
-        log_all_route_stats(planner)
+        # Capture stats from get_route_statistics
+        routes_stats, summary = get_route_statistics(planner)
         
+        # Write per-route docs
         for idx, route in enumerate(routes):
             routes_collection.insert_one({
                 "job_id": Binary(uuid.UUID(job_id).bytes, UUID_SUBTYPE),
                 "route_id": idx + 1,
-                "polyline": {"type": "LineString", "coordinates": route["polyline"]}
+                "polyline": {"type": "LineString", "coordinates": route["polyline"]},
+                "stats": routes_stats[idx]
             })
+        
+        # *** ADDED: insert overall summary into job_status ***
+        jobs_collection.update_one(
+            {"id": Binary(uuid.UUID(job_id).bytes, UUID_SUBTYPE)},
+            {"$set": {"overall_stats": summary}}
+        )
     
     except Exception as e:
         logger.error("Error in job %s: %s", job_id, str(e))
